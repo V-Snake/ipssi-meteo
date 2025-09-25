@@ -86,11 +86,11 @@ services:
     volumes:
       - clickhouse-data:/var/lib/clickhouse
 
-  data-producer:
-    build: ./kafka-producer
-    depends_on:
-      kafka:
-        condition: service_healthy
+  # data-producer:
+  #   build: ./kafka-producer
+  #   depends_on:
+  #     kafka:
+  #       condition: service_healthy
 
   # data-producer-london:
   #   build:
@@ -141,37 +141,35 @@ services:
 
   data-consumer-transformed:
     build:
-    
       context: ./kafka-consumer
     depends_on:
       kafka:
         condition: service_healthy
     command: ["python", "kafka_consumer.py", "weather_transformed"]
 
-  # spark-app:
-  #   build: ./spark-app
-  #   environment:
-  #     KAFKA_BOOTSTRAP: kafka:9092
-  #     SOURCE_TOPIC: weather_stream
-  #     SINK_TOPIC: weather_transformed
-  #     CHECKPOINT_DIR: /tmp/checkpoints/weather_transformed
-  #   depends_on:
-  #     kafka:
-  #       condition: service_healthy
+  spark-app:
+    build: ./spark-app
+    environment:
+      KAFKA_BOOTSTRAP: kafka:9092
+      SOURCE_TOPIC: weather_stream
+      SINK_TOPIC: weather_transformed
+      CHECKPOINT_DIR: /tmp/checkpoints/weather_transformed
+    depends_on:
+      kafka:
+        condition: service_healthy
 
-  # spark-aggregates:
-  #   build: ./spark-aggregates
-  #   environment:
-  #     KAFKA_BOOTSTRAP: kafka:9092
-      
-  #     STREAM_TOPIC: weather_stream
-  #     TRANSFORMED_TOPIC: weather_transformed
-  #     CHECKPOINT_DIR: /tmp/checkpoints/weather_aggregates
-  #   depends_on:
-  #     kafka:
-  #       condition: service_healthy
-  #     spark-app:
-  #       condition: service_started
+  spark-aggregates:
+    build: ./spark-aggregates
+    environment:
+      KAFKA_BOOTSTRAP: kafka:9092
+      STREAM_TOPIC: weather_stream
+      TRANSFORMED_TOPIC: weather_transformed
+      CHECKPOINT_DIR: /tmp/checkpoints/weather_aggregates
+    depends_on:
+      kafka:
+        condition: service_healthy
+      spark-app:
+        condition: service_started
 
   data-consumer-aggregates:
     build:

@@ -276,3 +276,888 @@ File Path                                          PID    Runtime      # DAGs   
 /opt/airflow/dags/simple_test_dag.py                                        1           0  0.25s           2025-09-25T08:53:09
 /opt/airflow/dags/example_weather_pipeline_dag.py                           1           0  0.23s           2025-09-25T08:53:09
 ================================================================================
+[2025-09-25T08:53:56.153+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/simple_test_dag.py                                        1           0  0.29s           2025-09-25T08:53:40
+/opt/airflow/dags/example_weather_pipeline_dag.py                           1           0  0.27s           2025-09-25T08:53:40
+================================================================================
+[2025-09-25T08:54:13.595+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-09-25T08:54:13.608+0000] {manager.py:740} INFO - There are 5 files in /opt/airflow/dags
+[2025-09-25T08:54:26.529+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  0.54s           2025-09-25T08:54:14
+/opt/airflow/dags/producer_management.py                                      3           0  0.30s           2025-09-25T08:54:13
+/opt/airflow/dags/simple_test_dag.py                                          1           0  0.26s           2025-09-25T08:54:10
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  0.24s           2025-09-25T08:54:10
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  0.24s           2025-09-25T08:54:13
+================================================================================
+[2025-09-25T08:54:56.573+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/simple_test_dag.py                                          1           0  0.16s           2025-09-25T08:54:41
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  0.15s           2025-09-25T08:54:44
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  0.14s           2025-09-25T08:54:41
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  0.11s           2025-09-25T08:54:44
+/opt/airflow/dags/producer_management.py                                      3           0  0.10s           2025-09-25T08:54:44
+================================================================================
+[2025-09-25T08:55:26.994+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/simple_test_dag.py                                          1           0  0.21s           2025-09-25T08:55:11
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  0.19s           2025-09-25T08:55:11
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  0.13s           2025-09-25T08:55:15
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  0.09s           2025-09-25T08:55:14
+/opt/airflow/dags/producer_management.py                                      3           0  0.09s           2025-09-25T08:55:14
+================================================================================
+[2025-09-25T08:55:57.501+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/simple_test_dag.py                                          1           0  0.15s           2025-09-25T08:55:42
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  0.13s           2025-09-25T08:55:42
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  0.12s           2025-09-25T08:55:45
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  0.10s           2025-09-25T08:55:45
+/opt/airflow/dags/producer_management.py                                      3           0  0.09s           2025-09-25T08:55:45
+================================================================================
+[2025-09-25T08:56:28.028+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/simple_test_dag.py                                          1           0  0.15s           2025-09-25T08:56:12
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  0.13s           2025-09-25T08:56:12
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  0.13s           2025-09-25T08:56:16
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  0.09s           2025-09-25T08:56:15
+/opt/airflow/dags/producer_management.py                                      3           0  0.09s           2025-09-25T08:56:15
+================================================================================
+[2025-09-25T08:56:58.072+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  1.42s           2025-09-25T08:56:52
+/opt/airflow/dags/producer_management.py                                      3           0  1.33s           2025-09-25T08:56:52
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  0.74s           2025-09-25T08:56:52
+/opt/airflow/dags/simple_test_dag.py                                          1           0  0.16s           2025-09-25T08:56:43
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  0.14s           2025-09-25T08:56:43
+================================================================================
+[2025-09-25T08:57:13.832+0000] {manager.py:452} INFO - Exiting gracefully upon receiving signal 15
+[2025-09-25T09:05:07.838+0000] {manager.py:470} INFO - Processing files using up to 2 processes at a time 
+[2025-09-25T09:05:07.847+0000] {manager.py:471} INFO - Process each file at most once every 30 seconds
+[2025-09-25T09:05:07.853+0000] {manager.py:472} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-09-25T09:05:07.854+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-09-25T09:05:07.916+0000] {manager.py:740} INFO - There are 5 files in /opt/airflow/dags
+[2025-09-25T09:05:08.554+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/simple_test_dag.py                                          0           0
+/opt/airflow/dags/spark_job_orchestration.py           165  0.33s             0           0
+/opt/airflow/dags/producer_management.py               168  0.25s             0           0
+/opt/airflow/dags/weather_pipeline_orchestration.py                           0           0
+/opt/airflow/dags/example_weather_pipeline_dag.py                             0           0
+================================================================================
+[2025-09-25T09:05:38.879+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  2.30s           2025-09-25T09:05:12
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  1.85s           2025-09-25T09:05:10
+/opt/airflow/dags/producer_management.py                                      3           0  1.83s           2025-09-25T09:05:10
+/opt/airflow/dags/simple_test_dag.py                                          1           0  0.87s           2025-09-25T09:05:10
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  0.59s           2025-09-25T09:05:11
+================================================================================
+[2025-09-25T09:06:09.446+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  0.20s           2025-09-25T09:05:43
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  0.17s           2025-09-25T09:05:41
+/opt/airflow/dags/producer_management.py                                      3           0  0.14s           2025-09-25T09:05:41
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  0.13s           2025-09-25T09:05:42
+/opt/airflow/dags/simple_test_dag.py                                          1           0  0.08s           2025-09-25T09:05:41
+================================================================================
+[2025-09-25T09:06:40.036+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  0.19s           2025-09-25T09:06:13
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  0.17s           2025-09-25T09:06:11
+/opt/airflow/dags/producer_management.py                                      3           0  0.14s           2025-09-25T09:06:11
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  0.09s           2025-09-25T09:06:12
+/opt/airflow/dags/simple_test_dag.py                                          1           0  0.07s           2025-09-25T09:06:11
+================================================================================
+[2025-09-25T09:07:10.605+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  1.11s           2025-09-25T09:06:44
+/opt/airflow/dags/simple_test_dag.py                                          1           0  0.93s           2025-09-25T09:06:43
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  0.70s           2025-09-25T09:06:45
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  0.59s           2025-09-25T09:06:42
+/opt/airflow/dags/producer_management.py                                      3           0  0.57s           2025-09-25T09:06:42
+================================================================================
+[2025-09-25T09:07:41.112+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  0.19s           2025-09-25T09:07:13
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  0.18s           2025-09-25T09:07:16
+/opt/airflow/dags/producer_management.py                                      3           0  0.17s           2025-09-25T09:07:13
+/opt/airflow/dags/simple_test_dag.py                                          1           0  0.08s           2025-09-25T09:07:13
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  0.07s           2025-09-25T09:07:14
+================================================================================
+[2025-09-25T09:08:11.649+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  0.21s           2025-09-25T09:07:44
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  0.18s           2025-09-25T09:07:46
+/opt/airflow/dags/producer_management.py                                      3           0  0.18s           2025-09-25T09:07:44
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  0.09s           2025-09-25T09:07:45
+/opt/airflow/dags/simple_test_dag.py                                          1           0  0.06s           2025-09-25T09:07:44
+================================================================================
+[2025-09-25T09:08:42.131+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  0.19s           2025-09-25T09:08:17
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  0.17s           2025-09-25T09:08:14
+/opt/airflow/dags/producer_management.py                                      3           0  0.14s           2025-09-25T09:08:14
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  0.09s           2025-09-25T09:08:15
+/opt/airflow/dags/simple_test_dag.py                                          1           0  0.06s           2025-09-25T09:08:14
+================================================================================
+[2025-09-25T09:09:11.352+0000] {manager.py:452} INFO - Exiting gracefully upon receiving signal 15
+[2025-09-25T09:13:33.130+0000] {manager.py:470} INFO - Processing files using up to 2 processes at a time 
+[2025-09-25T09:13:33.132+0000] {manager.py:471} INFO - Process each file at most once every 30 seconds
+[2025-09-25T09:13:33.135+0000] {manager.py:472} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-09-25T09:13:33.136+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-09-25T09:13:33.202+0000] {manager.py:740} INFO - There are 5 files in /opt/airflow/dags
+[2025-09-25T09:13:33.567+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/simple_test_dag.py                                          0           0
+/opt/airflow/dags/spark_job_orchestration.py           164  0.15s             0           0
+/opt/airflow/dags/producer_management.py               167  0.11s             0           0
+/opt/airflow/dags/weather_pipeline_orchestration.py                           0           0
+/opt/airflow/dags/example_weather_pipeline_dag.py                             0           0
+================================================================================
+[2025-09-25T09:14:03.793+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/producer_management.py                                      3           0  3.54s           2025-09-25T09:13:36
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  3.54s           2025-09-25T09:13:36
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  2.55s           2025-09-25T09:13:39
+/opt/airflow/dags/simple_test_dag.py                                          1           0  0.64s           2025-09-25T09:13:39
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  0.32s           2025-09-25T09:13:39
+================================================================================
+[2025-09-25T09:14:34.279+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/producer_management.py                                      3           0  1.97s           2025-09-25T09:14:09
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  1.91s           2025-09-25T09:14:09
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  1.49s           2025-09-25T09:14:12
+/opt/airflow/dags/simple_test_dag.py                                          1           0  1.10s           2025-09-25T09:14:10
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  0.76s           2025-09-25T09:14:11
+================================================================================
+[2025-09-25T09:15:04.435+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  1.29s           2025-09-25T09:14:41
+/opt/airflow/dags/producer_management.py                                      3           0  0.99s           2025-09-25T09:14:41
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  0.84s           2025-09-25T09:14:43
+/opt/airflow/dags/simple_test_dag.py                                          1           0  0.69s           2025-09-25T09:14:42
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  0.45s           2025-09-25T09:14:42
+================================================================================
+[2025-09-25T09:15:34.743+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/producer_management.py                                      3           0  0.21s           2025-09-25T09:15:11
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  0.18s           2025-09-25T09:15:14
+/opt/airflow/dags/simple_test_dag.py                                          1           0  0.11s           2025-09-25T09:15:12
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  0.10s           2025-09-25T09:15:12
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  0.07s           2025-09-25T09:15:11
+================================================================================
+[2025-09-25T09:16:05.363+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  3.03s           2025-09-25T09:15:45
+/opt/airflow/dags/simple_test_dag.py                                          1           0  2.58s           2025-09-25T09:15:46
+/opt/airflow/dags/producer_management.py                                      3           0  1.46s           2025-09-25T09:15:43
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  1.12s           2025-09-25T09:15:46
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  0.85s           2025-09-25T09:15:47
+================================================================================
+[2025-09-25T09:16:35.725+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  1.51s           2025-09-25T09:16:17
+/opt/airflow/dags/simple_test_dag.py                                          1           0  1.18s           2025-09-25T09:16:18
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  0.91s           2025-09-25T09:16:17
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  0.68s           2025-09-25T09:16:18
+/opt/airflow/dags/producer_management.py                                      3           0  0.63s           2025-09-25T09:16:14
+================================================================================
+[2025-09-25T09:17:06.082+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/producer_management.py                                      3           0  5.84s           2025-09-25T09:16:51
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  2.15s           2025-09-25T09:16:53
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  1.85s           2025-09-25T09:16:52
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  1.47s           2025-09-25T09:16:54
+/opt/airflow/dags/simple_test_dag.py                                          1           0  1.30s           2025-09-25T09:16:53
+================================================================================
+[2025-09-25T09:17:37.078+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  1.88s           2025-09-25T09:17:25
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  1.68s           2025-09-25T09:17:26
+/opt/airflow/dags/producer_management.py                                      3           0  1.57s           2025-09-25T09:17:23
+/opt/airflow/dags/simple_test_dag.py                                          1           0  1.27s           2025-09-25T09:17:25
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  0.99s           2025-09-25T09:17:23
+================================================================================
+[2025-09-25T09:18:07.238+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  2.48s           2025-09-25T09:17:59
+/opt/airflow/dags/producer_management.py                                      3           0  1.24s           2025-09-25T09:17:55
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  1.07s           2025-09-25T09:17:55
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  0.89s           2025-09-25T09:17:56
+/opt/airflow/dags/simple_test_dag.py                                          1           0  0.55s           2025-09-25T09:17:56
+================================================================================
+[2025-09-25T09:18:33.546+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-09-25T09:18:33.975+0000] {manager.py:740} INFO - There are 5 files in /opt/airflow/dags
+[2025-09-25T09:18:37.460+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  2.85s           2025-09-25T09:18:28
+/opt/airflow/dags/producer_management.py                                      3           0  2.71s           2025-09-25T09:18:28
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  2.27s           2025-09-25T09:18:30
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  1.31s           2025-09-25T09:18:31
+/opt/airflow/dags/simple_test_dag.py                                          1           0  0.95s           2025-09-25T09:18:29
+================================================================================
+[2025-09-25T09:19:07.525+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  2.50s           2025-09-25T09:19:03
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  2.26s           2025-09-25T09:19:03
+/opt/airflow/dags/producer_management.py                                      3           0  1.51s           2025-09-25T09:19:00
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  1.47s           2025-09-25T09:19:00
+/opt/airflow/dags/simple_test_dag.py                                          1           0  0.78s           2025-09-25T09:19:01
+================================================================================
+[2025-09-25T09:19:38.022+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  1.49s           2025-09-25T09:19:35
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  1.16s           2025-09-25T09:19:32
+/opt/airflow/dags/producer_management.py                                      3           0  0.99s           2025-09-25T09:19:32
+/opt/airflow/dags/simple_test_dag.py                                          1           0  0.47s           2025-09-25T09:19:32
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  0.20s           2025-09-25T09:19:33
+================================================================================
+[2025-09-25T09:20:08.599+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  1.37s           2025-09-25T09:20:03
+/opt/airflow/dags/producer_management.py                                      3           0  1.10s           2025-09-25T09:20:03
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  0.84s           2025-09-25T09:20:06
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  0.43s           2025-09-25T09:20:04
+/opt/airflow/dags/simple_test_dag.py                                          1           0  0.39s           2025-09-25T09:20:04
+================================================================================
+[2025-09-25T09:20:39.172+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  3.17s           2025-09-25T09:20:37
+/opt/airflow/dags/producer_management.py                                      3           0  3.04s           2025-09-25T09:20:37
+/opt/airflow/dags/simple_test_dag.py                                          1           0  1.79s           2025-09-25T09:20:39
+/opt/airflow/dags/weather_pipeline_orchestration.py    507  0.02s             1           0  0.84s           2025-09-25T09:20:06
+/opt/airflow/dags/example_weather_pipeline_dag.py      502  0.70s             1           0  0.43s           2025-09-25T09:20:04
+================================================================================
+[2025-09-25T09:21:09.389+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/spark_job_orchestration.py           514  1.98s             1           0  3.17s           2025-09-25T09:20:37
+/opt/airflow/dags/producer_management.py               517  1.10s             3           0  3.04s           2025-09-25T09:20:37
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  2.49s           2025-09-25T09:20:41
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  2.14s           2025-09-25T09:20:40
+/opt/airflow/dags/simple_test_dag.py                                          1           0  1.79s           2025-09-25T09:20:39
+================================================================================
+[2025-09-25T09:21:39.983+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/spark_job_orchestration.py           539  0.23s             1           0  2.01s           2025-09-25T09:21:09
+/opt/airflow/dags/producer_management.py                                      3           0  1.80s           2025-09-25T09:21:10
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  0.78s           2025-09-25T09:21:11
+/opt/airflow/dags/simple_test_dag.py                                          1           0  0.78s           2025-09-25T09:21:10
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  0.77s           2025-09-25T09:21:12
+================================================================================
+[2025-09-25T09:22:10.280+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  2.04s           2025-09-25T09:21:41
+/opt/airflow/dags/producer_management.py                                      3           0  1.63s           2025-09-25T09:21:42
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  1.09s           2025-09-25T09:21:43
+/opt/airflow/dags/simple_test_dag.py                                          1           0  1.08s           2025-09-25T09:21:42
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  0.99s           2025-09-25T09:21:43
+================================================================================
+[2025-09-25T09:22:40.906+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  2.48s           2025-09-25T09:22:14
+/opt/airflow/dags/producer_management.py                                      3           0  2.20s           2025-09-25T09:22:15
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  1.47s           2025-09-25T09:22:18
+/opt/airflow/dags/simple_test_dag.py                                          1           0  1.46s           2025-09-25T09:22:16
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  1.27s           2025-09-25T09:22:16
+================================================================================
+[2025-09-25T09:23:10.807+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  4.49s           2025-09-25T09:22:54
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  2.67s           2025-09-25T09:22:47
+/opt/airflow/dags/producer_management.py                                      3           0  2.37s           2025-09-25T09:22:47
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  2.32s           2025-09-25T09:22:50
+/opt/airflow/dags/simple_test_dag.py                                          1           0  2.23s           2025-09-25T09:22:49
+================================================================================
+[2025-09-25T09:23:34.014+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-09-25T09:23:34.197+0000] {manager.py:740} INFO - There are 5 files in /opt/airflow/dags
+[2025-09-25T09:23:41.856+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/producer_management.py                                      3           0  2.63s           2025-09-25T09:23:20
+/opt/airflow/dags/simple_test_dag.py                                          1           0  2.61s           2025-09-25T09:23:23
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  2.18s           2025-09-25T09:23:23
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  1.75s           2025-09-25T09:23:26
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  1.74s           2025-09-25T09:23:20
+================================================================================
+[2025-09-25T09:24:11.932+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/simple_test_dag.py                                          1           0  4.29s           2025-09-25T09:23:57
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  4.02s           2025-09-25T09:23:57
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  1.24s           2025-09-25T09:23:58
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  1.13s           2025-09-25T09:23:52
+/opt/airflow/dags/producer_management.py                                      3           0  1.13s           2025-09-25T09:23:52
+================================================================================
+[2025-09-25T09:24:42.413+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  2.47s           2025-09-25T09:24:25
+/opt/airflow/dags/producer_management.py                                      3           0  1.85s           2025-09-25T09:24:25
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  1.50s           2025-09-25T09:24:31
+/opt/airflow/dags/simple_test_dag.py                                          1           0  1.15s           2025-09-25T09:24:29
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  1.04s           2025-09-25T09:24:29
+================================================================================
+[2025-09-25T09:25:13.072+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  2.82s           2025-09-25T09:24:59
+/opt/airflow/dags/producer_management.py                                      3           0  2.51s           2025-09-25T09:25:00
+/opt/airflow/dags/simple_test_dag.py                                          1           0  2.02s           2025-09-25T09:25:02
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  1.65s           2025-09-25T09:25:03
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  1.31s           2025-09-25T09:25:02
+================================================================================
+[2025-09-25T09:25:43.160+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  1.85s           2025-09-25T09:25:32
+/opt/airflow/dags/producer_management.py                                      3           0  1.75s           2025-09-25T09:25:32
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  1.67s           2025-09-25T09:25:36
+/opt/airflow/dags/simple_test_dag.py                                          1           0  0.90s           2025-09-25T09:25:33
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  0.63s           2025-09-25T09:25:33
+================================================================================
+[2025-09-25T09:26:13.188+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  0.42s           2025-09-25T09:26:03
+/opt/airflow/dags/producer_management.py                                      3           0  0.36s           2025-09-25T09:26:03
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  0.21s           2025-09-25T09:26:07
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  0.14s           2025-09-25T09:26:04
+/opt/airflow/dags/simple_test_dag.py                                          1           0  0.13s           2025-09-25T09:26:03
+================================================================================
+[2025-09-25T09:26:43.663+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  0.22s           2025-09-25T09:26:34
+/opt/airflow/dags/producer_management.py                                      3           0  0.18s           2025-09-25T09:26:34
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  0.16s           2025-09-25T09:26:37
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  0.07s           2025-09-25T09:26:34
+/opt/airflow/dags/simple_test_dag.py                                          1           0  0.06s           2025-09-25T09:26:34
+================================================================================
+[2025-09-25T09:27:14.304+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  0.24s           2025-09-25T09:27:05
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  0.17s           2025-09-25T09:27:08
+/opt/airflow/dags/producer_management.py                                      3           0  0.16s           2025-09-25T09:27:05
+/opt/airflow/dags/simple_test_dag.py                                          1           0  0.07s           2025-09-25T09:27:05
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  0.06s           2025-09-25T09:27:05
+================================================================================
+[2025-09-25T09:27:44.976+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  0.33s           2025-09-25T09:27:39
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  0.21s           2025-09-25T09:27:35
+/opt/airflow/dags/producer_management.py                                      3           0  0.14s           2025-09-25T09:27:35
+/opt/airflow/dags/simple_test_dag.py                                          1           0  0.04s           2025-09-25T09:27:35
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  0.04s           2025-09-25T09:27:35
+================================================================================
+[2025-09-25T09:28:15.646+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  0.24s           2025-09-25T09:28:06
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  0.22s           2025-09-25T09:28:09
+/opt/airflow/dags/producer_management.py                                      3           0  0.18s           2025-09-25T09:28:06
+/opt/airflow/dags/simple_test_dag.py                                          1           0  0.09s           2025-09-25T09:28:06
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  0.05s           2025-09-25T09:28:06
+================================================================================
+[2025-09-25T09:28:34.798+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-09-25T09:28:34.806+0000] {manager.py:740} INFO - There are 5 files in /opt/airflow/dags
+[2025-09-25T09:28:46.213+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  0.20s           2025-09-25T09:28:37
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  0.15s           2025-09-25T09:28:40
+/opt/airflow/dags/producer_management.py                                      3           0  0.13s           2025-09-25T09:28:37
+/opt/airflow/dags/simple_test_dag.py                                          1           0  0.05s           2025-09-25T09:28:37
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  0.04s           2025-09-25T09:28:37
+================================================================================
+[2025-09-25T09:29:16.806+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  0.19s           2025-09-25T09:29:07
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  0.15s           2025-09-25T09:29:10
+/opt/airflow/dags/producer_management.py                                      3           0  0.14s           2025-09-25T09:29:07
+/opt/airflow/dags/simple_test_dag.py                                          1           0  0.07s           2025-09-25T09:29:07
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  0.04s           2025-09-25T09:29:07
+================================================================================
+[2025-09-25T09:29:47.319+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  0.19s           2025-09-25T09:29:38
+/opt/airflow/dags/producer_management.py                                      3           0  0.14s           2025-09-25T09:29:38
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  0.12s           2025-09-25T09:29:41
+/opt/airflow/dags/simple_test_dag.py                                          1           0  0.06s           2025-09-25T09:29:38
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  0.05s           2025-09-25T09:29:38
+================================================================================
+[2025-09-25T09:30:17.761+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  0.22s           2025-09-25T09:30:11
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  0.09s           2025-09-25T09:30:08
+/opt/airflow/dags/producer_management.py                                      3           0  0.09s           2025-09-25T09:30:08
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  0.06s           2025-09-25T09:30:08
+/opt/airflow/dags/simple_test_dag.py                                          1           0  0.06s           2025-09-25T09:30:08
+================================================================================
+[2025-09-25T09:30:48.473+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  0.37s           2025-09-25T09:30:39
+/opt/airflow/dags/producer_management.py                                      3           0  0.34s           2025-09-25T09:30:39
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  0.11s           2025-09-25T09:30:42
+/opt/airflow/dags/simple_test_dag.py                                          1           0  0.09s           2025-09-25T09:30:39
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  0.08s           2025-09-25T09:30:39
+================================================================================
+[2025-09-25T09:31:19.151+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  0.29s           2025-09-25T09:31:09
+/opt/airflow/dags/producer_management.py                                      3           0  0.22s           2025-09-25T09:31:09
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  0.11s           2025-09-25T09:31:13
+/opt/airflow/dags/simple_test_dag.py                                          1           0  0.05s           2025-09-25T09:31:10
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  0.05s           2025-09-25T09:31:10
+================================================================================
+[2025-09-25T09:31:49.710+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  0.18s           2025-09-25T09:31:40
+/opt/airflow/dags/producer_management.py                                      3           0  0.14s           2025-09-25T09:31:40
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  0.12s           2025-09-25T09:31:43
+/opt/airflow/dags/simple_test_dag.py                                          1           0  0.04s           2025-09-25T09:31:40
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  0.04s           2025-09-25T09:31:40
+================================================================================
+[2025-09-25T09:32:20.199+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  0.14s           2025-09-25T09:32:14
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  0.11s           2025-09-25T09:32:11
+/opt/airflow/dags/producer_management.py                                      3           0  0.09s           2025-09-25T09:32:11
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  0.05s           2025-09-25T09:32:11
+/opt/airflow/dags/simple_test_dag.py                                          1           0  0.05s           2025-09-25T09:32:11
+================================================================================
+[2025-09-25T09:32:50.730+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  0.20s           2025-09-25T09:32:41
+/opt/airflow/dags/producer_management.py                                      3           0  0.15s           2025-09-25T09:32:41
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  0.14s           2025-09-25T09:32:44
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  0.04s           2025-09-25T09:32:41
+/opt/airflow/dags/simple_test_dag.py                                          1           0  0.04s           2025-09-25T09:32:41
+================================================================================
+[2025-09-25T09:33:21.291+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  0.20s           2025-09-25T09:33:12
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  0.15s           2025-09-25T09:33:15
+/opt/airflow/dags/producer_management.py                                      3           0  0.13s           2025-09-25T09:33:12
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  0.06s           2025-09-25T09:33:12
+/opt/airflow/dags/simple_test_dag.py                                          1           0  0.04s           2025-09-25T09:33:12
+================================================================================
+[2025-09-25T09:33:35.404+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-09-25T09:33:35.427+0000] {manager.py:740} INFO - There are 5 files in /opt/airflow/dags
+[2025-09-25T09:33:51.863+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  0.20s           2025-09-25T09:33:42
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  0.15s           2025-09-25T09:33:45
+/opt/airflow/dags/producer_management.py                                      3           0  0.13s           2025-09-25T09:33:42
+/opt/airflow/dags/simple_test_dag.py                                          1           0  0.04s           2025-09-25T09:33:42
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  0.04s           2025-09-25T09:33:42
+================================================================================
+[2025-09-25T09:34:22.471+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  0.21s           2025-09-25T09:34:13
+/opt/airflow/dags/producer_management.py                                      3           0  0.17s           2025-09-25T09:34:13
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  0.12s           2025-09-25T09:34:16
+/opt/airflow/dags/simple_test_dag.py                                          1           0  0.07s           2025-09-25T09:34:13
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  0.07s           2025-09-25T09:34:13
+================================================================================
+[2025-09-25T09:34:52.965+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  0.17s           2025-09-25T09:34:43
+/opt/airflow/dags/producer_management.py                                      3           0  0.14s           2025-09-25T09:34:43
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  0.12s           2025-09-25T09:34:47
+/opt/airflow/dags/simple_test_dag.py                                          1           0  0.05s           2025-09-25T09:34:43
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  0.04s           2025-09-25T09:34:43
+================================================================================
+[2025-09-25T09:35:23.565+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  0.23s           2025-09-25T09:35:14
+/opt/airflow/dags/producer_management.py                                      3           0  0.18s           2025-09-25T09:35:14
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  0.13s           2025-09-25T09:35:17
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  0.05s           2025-09-25T09:35:14
+/opt/airflow/dags/simple_test_dag.py                                          1           0  0.04s           2025-09-25T09:35:14
+================================================================================
+[2025-09-25T09:35:54.241+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  0.18s           2025-09-25T09:35:45
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  0.17s           2025-09-25T09:35:48
+/opt/airflow/dags/producer_management.py                                      3           0  0.14s           2025-09-25T09:35:45
+/opt/airflow/dags/simple_test_dag.py                                          1           0  0.04s           2025-09-25T09:35:45
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  0.04s           2025-09-25T09:35:45
+================================================================================
+[2025-09-25T09:36:24.958+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  0.32s           2025-09-25T09:36:19
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  0.21s           2025-09-25T09:36:15
+/opt/airflow/dags/producer_management.py                                      3           0  0.17s           2025-09-25T09:36:15
+/opt/airflow/dags/simple_test_dag.py                                          1           0  0.04s           2025-09-25T09:36:15
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  0.04s           2025-09-25T09:36:15
+================================================================================
+[2025-09-25T09:36:55.447+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  0.15s           2025-09-25T09:36:46
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  0.15s           2025-09-25T09:36:49
+/opt/airflow/dags/producer_management.py                                      3           0  0.12s           2025-09-25T09:36:46
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  0.05s           2025-09-25T09:36:46
+/opt/airflow/dags/simple_test_dag.py                                          1           0  0.05s           2025-09-25T09:36:46
+================================================================================
+[2025-09-25T09:37:25.963+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  0.16s           2025-09-25T09:37:16
+/opt/airflow/dags/producer_management.py                                      3           0  0.13s           2025-09-25T09:37:16
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  0.11s           2025-09-25T09:37:19
+/opt/airflow/dags/simple_test_dag.py                                          1           0  0.04s           2025-09-25T09:37:16
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  0.04s           2025-09-25T09:37:16
+================================================================================
+[2025-09-25T09:37:56.461+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  0.14s           2025-09-25T09:37:47
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  0.14s           2025-09-25T09:37:50
+/opt/airflow/dags/producer_management.py                                      3           0  0.12s           2025-09-25T09:37:47
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  0.05s           2025-09-25T09:37:47
+/opt/airflow/dags/simple_test_dag.py                                          1           0  0.04s           2025-09-25T09:37:47
+================================================================================
+[2025-09-25T09:38:27.034+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  0.17s           2025-09-25T09:38:17
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  0.13s           2025-09-25T09:38:21
+/opt/airflow/dags/producer_management.py                                      3           0  0.13s           2025-09-25T09:38:17
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  0.04s           2025-09-25T09:38:17
+/opt/airflow/dags/simple_test_dag.py                                          1           0  0.04s           2025-09-25T09:38:17
+================================================================================
+[2025-09-25T09:38:36.115+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-09-25T09:38:36.130+0000] {manager.py:740} INFO - There are 5 files in /opt/airflow/dags
+[2025-09-25T09:38:57.518+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  0.14s           2025-09-25T09:38:51
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  0.13s           2025-09-25T09:38:48
+/opt/airflow/dags/producer_management.py                                      3           0  0.10s           2025-09-25T09:38:48
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  0.04s           2025-09-25T09:38:48
+/opt/airflow/dags/simple_test_dag.py                                          1           0  0.04s           2025-09-25T09:38:48
+================================================================================
+[2025-09-25T09:39:28.054+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  0.21s           2025-09-25T09:39:18
+/opt/airflow/dags/producer_management.py                                      3           0  0.14s           2025-09-25T09:39:18
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  0.13s           2025-09-25T09:39:22
+/opt/airflow/dags/simple_test_dag.py                                          1           0  0.05s           2025-09-25T09:39:18
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  0.04s           2025-09-25T09:39:18
+================================================================================
+[2025-09-25T09:39:58.526+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  0.16s           2025-09-25T09:39:49
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  0.14s           2025-09-25T09:39:52
+/opt/airflow/dags/producer_management.py                                      3           0  0.12s           2025-09-25T09:39:49
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  0.04s           2025-09-25T09:39:49
+/opt/airflow/dags/simple_test_dag.py                                          1           0  0.04s           2025-09-25T09:39:49
+================================================================================
+[2025-09-25T09:40:29.014+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  0.15s           2025-09-25T09:40:19
+/opt/airflow/dags/producer_management.py                                      3           0  0.12s           2025-09-25T09:40:19
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  0.12s           2025-09-25T09:40:23
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  0.05s           2025-09-25T09:40:19
+/opt/airflow/dags/simple_test_dag.py                                          1           0  0.05s           2025-09-25T09:40:19
+================================================================================
+[2025-09-25T09:40:59.507+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  0.17s           2025-09-25T09:40:50
+/opt/airflow/dags/producer_management.py                                      3           0  0.14s           2025-09-25T09:40:50
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  0.10s           2025-09-25T09:40:53
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  0.06s           2025-09-25T09:40:50
+/opt/airflow/dags/simple_test_dag.py                                          1           0  0.05s           2025-09-25T09:40:50
+================================================================================
+[2025-09-25T09:41:30.050+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  0.18s           2025-09-25T09:41:20
+/opt/airflow/dags/producer_management.py                                      3           0  0.14s           2025-09-25T09:41:20
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  0.10s           2025-09-25T09:41:24
+/opt/airflow/dags/simple_test_dag.py                                          1           0  0.05s           2025-09-25T09:41:20
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  0.05s           2025-09-25T09:41:20
+================================================================================
+[2025-09-25T09:42:00.523+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/spark_job_orchestration.py                                  1           0  0.15s           2025-09-25T09:41:51
+/opt/airflow/dags/weather_pipeline_orchestration.py                           1           0  0.13s           2025-09-25T09:41:54
+/opt/airflow/dags/producer_management.py                                      3           0  0.10s           2025-09-25T09:41:51
+/opt/airflow/dags/simple_test_dag.py                                          1           0  0.05s           2025-09-25T09:41:51
+/opt/airflow/dags/example_weather_pipeline_dag.py                             1           0  0.04s           2025-09-25T09:41:51
+================================================================================
