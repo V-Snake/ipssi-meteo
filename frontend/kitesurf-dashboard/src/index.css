@@ -1,0 +1,212 @@
+/* src/index.css — Tailwind v3 + Custom Styling */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* helpers */
+html, body, #root { height: 100%; }
+* { box-sizing: border-box; }
+
+@layer base {
+  :root {
+    --color-primary: #3b82f6;
+    --color-secondary: #06b6d4;
+    --color-success: #22c55e;
+    --color-warning: #f59e0b;
+    --color-danger: #ef4444;
+    --color-info: #3b82f6;
+  }
+
+  * {
+    @apply border-gray-200;
+  }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    @apply text-gray-900 bg-gray-50;
+  }
+}
+
+@layer components {
+  /* Custom tooltip styling */
+  .leaflet-tooltip.custom-tooltip {
+    @apply bg-white/95 backdrop-blur-sm border border-gray-200 rounded-lg shadow-xl;
+    padding: 8px 12px !important;
+    font-size: 13px !important;
+    line-height: 1.4 !important;
+    border-radius: 8px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+  }
+
+  .leaflet-tooltip.custom-tooltip::before {
+    border-top-color: rgba(255, 255, 255, 0.95) !important;
+  }
+
+  /* Kitesurf zone markers hover effects */
+  .kite-zone-marker {
+    transition: all 0.2s ease-in-out;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+  }
+
+  .kite-zone-marker:hover {
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+  }
+
+  /* Zones de surbrillance pour les conditions de kitesurf */
+  .kite-zone-highlight {
+    transition: all 0.3s ease-in-out;
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.15));
+  }
+
+  .kite-zone-highlight:hover {
+    filter: drop-shadow(0 4px 16px rgba(0, 0, 0, 0.25));
+    transform: scale(1.02);
+  }
+
+  /* Custom scrollbar */
+  .overflow-y-auto::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .overflow-y-auto::-webkit-scrollbar-track {
+    @apply bg-gray-100 rounded-full;
+  }
+
+  .overflow-y-auto::-webkit-scrollbar-thumb {
+    @apply bg-gray-300 rounded-full;
+  }
+
+  .overflow-y-auto::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-400;
+  }
+
+  /* Recharts customization */
+  .recharts-tooltip-wrapper {
+    @apply drop-shadow-xl;
+  }
+
+  .recharts-cartesian-axis-tick-value {
+    font-size: 12px !important;
+  }
+
+  .recharts-legend-item-text {
+    @apply text-gray-700 !important;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent;
+  }
+
+  .glass-effect {
+    @apply bg-white/80 backdrop-blur-sm border border-white/20;
+  }
+
+  .shadow-soft {
+    box-shadow: 0 2px 15px -3px rgba(0, 0, 0, 0.07), 0 10px 20px -2px rgba(0, 0, 0, 0.04);
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.3s ease-out;
+  }
+
+  .animate-pulse-slow {
+    animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Leaflet overrides for modern styling */
+.leaflet-control-zoom a {
+  @apply bg-white/90 backdrop-blur-sm border border-gray-200/50 text-gray-700 hover:bg-white hover:text-blue-600;
+  border-radius: 8px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+  transition: all 0.2s ease-in-out;
+}
+
+.leaflet-control-zoom {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.leaflet-control-zoom a:first-child {
+  border-top-left-radius: 8px !important;
+  border-top-right-radius: 8px !important;
+  border-bottom: 1px solid rgba(229, 231, 235, 0.5) !important;
+}
+
+.leaflet-control-zoom a:last-child {
+  border-bottom-left-radius: 8px !important;
+  border-bottom-right-radius: 8px !important;
+}
+
+.leaflet-control-attribution {
+  @apply bg-white/80 backdrop-blur-sm text-gray-600;
+  border-radius: 6px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+  font-size: 11px !important;
+  padding: 4px 8px !important;
+}
+
+.leaflet-bar {
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* Legend styling improvements */
+.legend {
+  font-family: 'Inter', sans-serif !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Loading animation improvements */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+/* Responsive improvements */
+@media (max-width: 1024px) {
+  .grid-cols-\[1fr_400px\] {
+    grid-template-columns: 1fr;
+  }
+  
+  .h-\[300px\] {
+    height: 250px;
+  }
+}

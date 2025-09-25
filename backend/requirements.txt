@@ -1,0 +1,7 @@
+fastapi
+uvicorn[standard]
+httpx
+pydantic-settings
+cachetools
+h3==3.7.7
+python-dateutil

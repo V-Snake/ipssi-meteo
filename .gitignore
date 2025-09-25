@@ -1,0 +1,107 @@
+# 🧹 GitIgnore Principal - Projet KiteSurf Dashboard
+# Frontend React/TypeScript + Backend FastAPI
+
+# ================================
+# 🐍 BACKEND PYTHON
+# ================================
+
+# Environnements virtuels Python
+backend/.venv/
+backend/venv/
+.venv/
+venv/
+
+# Cache Python
+backend/__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+backend/build/
+backend/dist/
+backend/*.egg-info/
+backend/.installed.cfg
+backend/*.egg
+
+# Tests et coverage Python
+backend/.pytest_cache/
+backend/.coverage
+backend/htmlcov/
+backend/.tox/
+backend/.nox/
+
+# ================================
+# 🌍 CONFIGURATION & SÉCURITÉ
+# ================================
+
+# Variables d'environnement
+.env
+.env.*
+!.env.example
+*.env
+
+# Secrets et clés API
+*.key
+*.pem
+*.crt
+api_keys.*
+secrets/
+credentials.*
+
+# Configuration locale
+config.local.*
+*.local.json
+
+# ================================
+# 🛠️ DÉVELOPPEMENT
+# ================================
+
+# OS et système
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+*.stackdump
+
+# Éditeurs
+.vscode/settings.json
+.idea/
+
+# ================================
+# � TEMPORAIRES & LOGS
+# ================================
+
+# Logs
+*.log
+logs/
+log/
+
+# Fichiers temporaires
+*.tmp
+*.temp
+.cache/
+
+# ================================
+# 🎯 PROJET SPÉCIFIQUE
+# ================================
+
+# Anciens fichiers (déjà nettoyés mais au cas où)
+*_old.*
+*_backup.*
+*_copy.*
+*.bak
+
+# Données de test/mock
+test_data/
+mock_data/
+
+# Screenshots de dev
+screenshots/
+
+# ================================
+# � NOTES
+# ================================
+# Le frontend a son propre .gitignore dans frontend/kitesurf-dashboard/
+# qui gère node_modules, dist, etc.
