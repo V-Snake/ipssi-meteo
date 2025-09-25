@@ -1,0 +1,232 @@
+services:
+  grafana:
+    image: grafana/grafana-enterprise
+    container_name: grafana
+    restart: unless-stopped
+    ports:
+      - '3000:3000'
+    volumes:
+      - grafana-storage:/var/lib/grafana
+      - ./docs/grafana/provisioning:/etc/grafana/provisioning
+    environment:
+      - GF_INSTALL_PLUGINS=grafana-clickhouse-datasource,marcusolsson-json-datasource
+      - GF_AUTH_ANONYMOUS_ENABLED=true
+      - GF_AUTH_ANONYMOUS_ORG_ROLE=Viewer
+
+  zookeeper:
+    image: wurstmeister/zookeeper
+    ports:
+      - "2181:2181"
+
+  namenode:
+    image: bde2020/hadoop-namenode:2.0.0-hadoop3.2.1-java8
+    container_name: namenode
+    restart: always
+    ports:
+      - "9870:9870"
+      - "9000:9000"
+    volumes:
+      - hadoop_namenode:/hadoop/dfs/name
+    environment:
+      - CLUSTER_NAME=test
+    env_file:
+      - ./hadoop.env
+
+  datanode:
+    image: bde2020/hadoop-datanode:2.0.0-hadoop3.2.1-java8
+    container_name: datanode
+    restart: always
+    volumes:
+      - hadoop_datanode:/hadoop/dfs/data
+    environment:
+      SERVICE_PRECONDITION: "namenode:9870"
+    env_file:
+      - ./hadoop.env
+    depends_on:
+      - namenode
+
+  kafka:
+    image: wurstmeister/kafka
+    ports:
+      - "9092:9092"
+    environment:
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_ADVERTISED_HOST_NAME: kafka
+      KAFKA_CREATE_TOPICS: "weather_stream:1:1,weather_transformed:1:1,weather_aggregates:1:1"
+    depends_on:
+      - zookeeper
+    healthcheck:
+      test: ["CMD", "nc", "-z", "localhost", "9092"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+
+  kafka-exporter:
+    image: danielqsj/kafka-exporter:latest
+    command:
+      - --kafka.server=kafka:9092
+    ports:
+      - "9308:9308"
+    depends_on:
+      kafka:
+        condition: service_healthy
+
+  prometheus:
+    image: prom/prometheus:latest
+    volumes:
+      - ./monitoring/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+    ports:
+      - "9090:9090"
+
+  clickhouse:
+    image: clickhouse/clickhouse-server:23.8
+    ports:
+      - "8123:8123"
+      - "9001:9000"
+    volumes:
+      - clickhouse-data:/var/lib/clickhouse
+
+  data-producer:
+    build: ./kafka-producer
+    depends_on:
+      kafka:
+        condition: service_healthy
+
+  data-producer-london:
+    build:
+      context: ./kafka-producer
+      dockerfile: Dockerfile.v2
+    environment:
+      CITY: London
+      COUNTRY: United Kingdom
+      KAFKA_BROKER: kafka:9092
+      TOPIC: weather_stream
+    depends_on:
+      kafka:
+        condition: service_healthy
+  
+  data-producer-paris:
+    build:
+      context: ./kafka-producer
+      dockerfile: Dockerfile.v2
+    environment:
+      CITY: Paris
+      COUNTRY: France
+      KAFKA_BROKER: kafka:9092
+      TOPIC: weather_stream
+    depends_on:
+      kafka:
+        condition: service_healthy
+  
+  data-producer-new-york:
+    build:
+      context: ./kafka-producer
+      dockerfile: Dockerfile.v2
+    environment:
+      CITY: New York
+      COUNTRY: United States
+      KAFKA_BROKER: kafka:9092
+      TOPIC: weather_stream
+    depends_on:
+      kafka:
+        condition: service_healthy
+
+  data-consumer:
+    build:
+      context: ./kafka-consumer
+    depends_on:
+      kafka:
+        condition: service_healthy
+    command: ["python", "kafka_consumer.py", "weather_stream"]
+
+  data-consumer-transformed:
+    build:
+    
+      context: ./kafka-consumer
+    depends_on:
+      kafka:
+        condition: service_healthy
+    command: ["python", "kafka_consumer.py", "weather_transformed"]
+
+  spark-app:
+    build: ./spark-app
+    environment:
+      KAFKA_BOOTSTRAP: kafka:9092
+      SOURCE_TOPIC: weather_stream
+      SINK_TOPIC: weather_transformed
+      CHECKPOINT_DIR: /tmp/checkpoints/weather_transformed
+    depends_on:
+      kafka:
+        condition: service_healthy
+
+  spark-aggregates:
+    build: ./spark-aggregates
+    environment:
+      KAFKA_BOOTSTRAP: kafka:9092
+      
+      STREAM_TOPIC: weather_stream
+      TRANSFORMED_TOPIC: weather_transformed
+      CHECKPOINT_DIR: /tmp/checkpoints/weather_aggregates
+    depends_on:
+      kafka:
+        condition: service_healthy
+      spark-app:
+        condition: service_started
+
+  data-consumer-aggregates:
+    build:
+      context: ./kafka-consumer
+    depends_on:
+      kafka:
+        condition: service_healthy
+    command: ["python", "kafka_consumer.py", "weather_aggregates"]
+
+
+
+  spark-hdfs-writer:
+    build: ./spark-hdfs-writer
+    environment:
+      KAFKA_BOOTSTRAP: kafka:9092
+      SOURCE_TOPIC: weather_stream
+      HDFS_NAMENODE: hdfs://namenode:9000
+      HDFS_PATH: /weather-data
+      CHECKPOINT_DIR: /tmp/checkpoints/hdfs_writer
+    depends_on:
+      kafka:
+        condition: service_healthy
+      namenode:
+        condition: service_started
+
+  alerts-consumer:
+    build: ./kafka-consumer
+    environment:
+      KAFKA_BROKER: kafka:9092
+      TOPIC: weather_transformed
+      WEBHDFS_BASE: http://namenode:9870/webhdfs/v1
+      HDFS_BASE_PATH: /hdfs-data
+      DEFAULT_COUNTRY: France
+      DEFAULT_CITY: Paris
+    depends_on:
+      kafka:
+        condition: service_healthy
+      namenode:
+        condition: service_started
+
+  analytics-api:
+    build: ./analytics-api
+    environment:
+      WEBHDFS_BASE: http://namenode:9870/webhdfs/v1
+      WEATHER_DATA_PATH: /weather-data
+      ALERTS_PATH: /hdfs-data
+    ports:
+      - "8000:8000"
+    depends_on:
+      namenode:
+        condition: service_started
+
+volumes:
+  grafana-storage: {}
+  hadoop_namenode: {}
+  hadoop_datanode: {}
+  clickhouse-data: {}
+
