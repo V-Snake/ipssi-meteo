@@ -92,44 +92,44 @@ services:
       kafka:
         condition: service_healthy
 
-  # data-producer-london:
-  #   build:
-  #     context: ./kafka-producer
-  #     dockerfile: Dockerfile.v2
-  #   environment:
-  #     CITY: London
-  #     COUNTRY: United Kingdom
-  #     KAFKA_BROKER: kafka:9092
-  #     TOPIC: weather_stream
-  #   depends_on:
-  #     kafka:
-  #       condition: service_healthy
-  
-  # data-producer-paris:
-  #   build:
-  #     context: ./kafka-producer
-  #     dockerfile: Dockerfile.v2
-  #   environment:
-  #     CITY: Paris
-  #     COUNTRY: France
-  #     KAFKA_BROKER: kafka:9092
-  #     TOPIC: weather_stream
-  #   depends_on:
-  #     kafka:
-  #       condition: service_healthy
-  
-  # data-producer-new-york:
-  #   build:
-  #     context: ./kafka-producer
-  #     dockerfile: Dockerfile.v2
-  #   environment:
-  #     CITY: New York
-  #     COUNTRY: United States
-  #     KAFKA_BROKER: kafka:9092
-  #     TOPIC: weather_stream
-  #   depends_on:
-  #     kafka:
-  #       condition: service_healthy
+  data-producer-london:
+    build:
+      context: ./kafka-producer
+      dockerfile: Dockerfile.v2
+    environment:
+      CITY: London
+      COUNTRY: United Kingdom
+      KAFKA_BROKER: kafka:9092
+      TOPIC: weather_stream
+    depends_on:
+      kafka:
+        condition: service_healthy
+
+  data-producer-paris:
+    build:
+      context: ./kafka-producer
+      dockerfile: Dockerfile.v2
+    environment:
+      CITY: Paris
+      COUNTRY: France
+      KAFKA_BROKER: kafka:9092
+      TOPIC: weather_stream
+    depends_on:
+      kafka:
+        condition: service_healthy
+
+  data-producer-new-york:
+    build:
+      context: ./kafka-producer
+      dockerfile: Dockerfile.v2
+    environment:
+      CITY: New York
+      COUNTRY: United States
+      KAFKA_BROKER: kafka:9092
+      TOPIC: weather_stream
+    depends_on:
+      kafka:
+        condition: service_healthy
 
   data-consumer:
     build:
@@ -141,37 +141,35 @@ services:
 
   data-consumer-transformed:
     build:
-    
       context: ./kafka-consumer
     depends_on:
       kafka:
         condition: service_healthy
     command: ["python", "kafka_consumer.py", "weather_transformed"]
 
-  # spark-app:
-  #   build: ./spark-app
-  #   environment:
-  #     KAFKA_BOOTSTRAP: kafka:9092
-  #     SOURCE_TOPIC: weather_stream
-  #     SINK_TOPIC: weather_transformed
-  #     CHECKPOINT_DIR: /tmp/checkpoints/weather_transformed
-  #   depends_on:
-  #     kafka:
-  #       condition: service_healthy
+  spark-app:
+    build: ./spark-app
+    environment:
+      KAFKA_BOOTSTRAP: kafka:9092
+      SOURCE_TOPIC: weather_stream
+      SINK_TOPIC: weather_transformed
+      CHECKPOINT_DIR: /tmp/checkpoints/weather_transformed
+    depends_on:
+      kafka:
+        condition: service_healthy
 
-  # spark-aggregates:
-  #   build: ./spark-aggregates
-  #   environment:
-  #     KAFKA_BOOTSTRAP: kafka:9092
-      
-  #     STREAM_TOPIC: weather_stream
-  #     TRANSFORMED_TOPIC: weather_transformed
-  #     CHECKPOINT_DIR: /tmp/checkpoints/weather_aggregates
-  #   depends_on:
-  #     kafka:
-  #       condition: service_healthy
-  #     spark-app:
-  #       condition: service_started
+  spark-aggregates:
+    build: ./spark-aggregates
+    environment:
+      KAFKA_BOOTSTRAP: kafka:9092
+      STREAM_TOPIC: weather_stream
+      TRANSFORMED_TOPIC: weather_transformed
+      CHECKPOINT_DIR: /tmp/checkpoints/weather_aggregates
+    depends_on:
+      kafka:
+        condition: service_healthy
+      spark-app:
+        condition: service_started
 
   data-consumer-aggregates:
     build:
@@ -181,48 +179,46 @@ services:
         condition: service_healthy
     command: ["python", "kafka_consumer.py", "weather_aggregates"]
 
+  spark-hdfs-writer:
+    build: ./spark-hdfs-writer
+    environment:
+      KAFKA_BOOTSTRAP: kafka:9092
+      SOURCE_TOPIC: weather_stream
+      HDFS_NAMENODE: hdfs://namenode:9000
+      HDFS_PATH: /weather-data
+      CHECKPOINT_DIR: /tmp/checkpoints/hdfs_writer
+    depends_on:
+      kafka:
+        condition: service_healthy
+      namenode:
+        condition: service_started
 
+  alerts-consumer:
+    build: ./kafka-consumer
+    environment:
+      KAFKA_BROKER: kafka:9092
+      TOPIC: weather_transformed
+      WEBHDFS_BASE: http://namenode:9870/webhdfs/v1
+      HDFS_BASE_PATH: /hdfs-data
+      DEFAULT_COUNTRY: France
+      DEFAULT_CITY: Paris
+    depends_on:
+      kafka:
+        condition: service_healthy
+      namenode:
+        condition: service_started
 
-  # spark-hdfs-writer:
-  #   build: ./spark-hdfs-writer
-  #   environment:
-  #     KAFKA_BOOTSTRAP: kafka:9092
-  #     SOURCE_TOPIC: weather_stream
-  #     HDFS_NAMENODE: hdfs://namenode:9000
-  #     HDFS_PATH: /weather-data
-  #     CHECKPOINT_DIR: /tmp/checkpoints/hdfs_writer
-  #   depends_on:
-  #     kafka:
-  #       condition: service_healthy
-  #     namenode:
-  #       condition: service_started
-
-  # alerts-consumer:
-  #   build: ./kafka-consumer
-  #   environment:
-  #     KAFKA_BROKER: kafka:9092
-  #     TOPIC: weather_transformed
-  #     WEBHDFS_BASE: http://namenode:9870/webhdfs/v1
-  #     HDFS_BASE_PATH: /hdfs-data
-  #     DEFAULT_COUNTRY: France
-  #     DEFAULT_CITY: Paris
-  #   depends_on:
-  #     kafka:
-  #       condition: service_healthy
-  #     namenode:
-  #       condition: service_started
-
-  # analytics-api:
-  #   build: ./analytics-api
-  #   environment:
-  #     WEBHDFS_BASE: http://namenode:9870/webhdfs/v1
-  #     WEATHER_DATA_PATH: /weather-data
-  #     ALERTS_PATH: /hdfs-data
-  #   ports:
-  #     - "8000:8000"
-  #   depends_on:
-  #     namenode:
-  #       condition: service_started
+  analytics-api:
+    build: ./analytics-api
+    environment:
+      WEBHDFS_BASE: http://namenode:9870/webhdfs/v1
+      WEATHER_DATA_PATH: /weather-data
+      ALERTS_PATH: /hdfs-data
+    ports:
+      - "8000:8000"
+    depends_on:
+      namenode:
+        condition: service_started
 
   postgres:
     image: postgres:13
@@ -238,8 +234,7 @@ services:
       retries: 5
     volumes:
       - postgres-airflow:/var/lib/postgresql/data
-    ports:
-      - "5432:5432"
+    # No host port mapping (avoids Windows conflicts with local Postgres)
 
   airflow-init:
     image: apache/airflow:2.9.3
@@ -248,11 +243,12 @@ services:
       - AIRFLOW__CORE__EXECUTOR=LocalExecutor
       - AIRFLOW__CORE__LOAD_EXAMPLES=False
       - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres/airflow
+      - _PIP_ADDITIONAL_REQUIREMENTS=requests kafka-python
     user: "0:0"
     volumes:
       - ./airflow/dags:/opt/airflow/dags
-      - ./airflow/logs:/opt/airflow/logs
-      - ./airflow/plugins:/opt/airflow/plugins
+      - airflow-logs:/opt/airflow/logs
+      - airflow-plugins:/opt/airflow/plugins
     entrypoint: /bin/bash
     command: -c "airflow db migrate && airflow users create --username admin --firstname admin --lastname admin --role Admin --email admin@example.com --password admin"
     depends_on:
@@ -266,6 +262,7 @@ services:
       - AIRFLOW__CORE__EXECUTOR=LocalExecutor
       - AIRFLOW__CORE__LOAD_EXAMPLES=False
       - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres/airflow
+      - _PIP_ADDITIONAL_REQUIREMENTS=requests kafka-python
     user: "0:0"
     ports:
       - "8080:8080"
@@ -276,8 +273,8 @@ services:
         condition: service_healthy
     volumes:
       - ./airflow/dags:/opt/airflow/dags
-      - ./airflow/logs:/opt/airflow/logs
-      - ./airflow/plugins:/opt/airflow/plugins
+      - airflow-logs:/opt/airflow/logs
+      - airflow-plugins:/opt/airflow/plugins
     command: webserver
 
   airflow-scheduler:
@@ -287,6 +284,7 @@ services:
       - AIRFLOW__CORE__EXECUTOR=LocalExecutor
       - AIRFLOW__CORE__LOAD_EXAMPLES=False
       - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres/airflow
+      - _PIP_ADDITIONAL_REQUIREMENTS=requests kafka-python
     user: "0:0"
     depends_on:
       airflow-init:
@@ -295,8 +293,8 @@ services:
         condition: service_healthy
     volumes:
       - ./airflow/dags:/opt/airflow/dags
-      - ./airflow/logs:/opt/airflow/logs
-      - ./airflow/plugins:/opt/airflow/plugins
+      - airflow-logs:/opt/airflow/logs
+      - airflow-plugins:/opt/airflow/plugins
     command: scheduler
 
   airflow-triggerer:
@@ -306,6 +304,7 @@ services:
       - AIRFLOW__CORE__EXECUTOR=LocalExecutor
       - AIRFLOW__CORE__LOAD_EXAMPLES=False
       - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres/airflow
+      - _PIP_ADDITIONAL_REQUIREMENTS=requests kafka-python
     user: "0:0"
     depends_on:
       airflow-init:
@@ -314,8 +313,8 @@ services:
         condition: service_healthy
     volumes:
       - ./airflow/dags:/opt/airflow/dags
-      - ./airflow/logs:/opt/airflow/logs
-      - ./airflow/plugins:/opt/airflow/plugins
+      - airflow-logs:/opt/airflow/logs
+      - airflow-plugins:/opt/airflow/plugins
     command: triggerer
 
 volumes:
@@ -324,4 +323,7 @@ volumes:
   hadoop_datanode: {}
   clickhouse-data: {}
   postgres-airflow: {}
+  airflow-logs: {}
+  airflow-plugins: {}
+
 
