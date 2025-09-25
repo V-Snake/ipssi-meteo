@@ -5,3 +5,13 @@ datasources:
     access: proxy
     url: http://analytics-api:8000
     jsonData: {}
+  - name: BackendAPI
+    type: marcusolsson-json-datasource
+    access: proxy
+    url: http://backend-api:8000
+    jsonData: {}
+  - name: json-datasource
+    type: marcusolsson-json-datasource
+    access: proxy
+    url: http://backend-api:8000
+    jsonData: {}

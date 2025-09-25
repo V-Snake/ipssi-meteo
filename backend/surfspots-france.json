@@ -1,0 +1,2602 @@
+{
+  "elements": [
+      {
+      "type": "node",
+      "id": 670699720,
+      "lat": 16.2409545,
+      "lon": -61.3306582,
+      "tags": {
+        "leisure": "sport",
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 913120839,
+      "lat": 43.3723576,
+      "lon": -1.7743576,
+      "tags": {
+        "addr:housenumber": "12",
+        "club": "yes",
+        "name": "Onaka",
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1214950425,
+      "lat": 45.0037667,
+      "lon": -1.2009218,
+      "tags": {
+        "name": "La Petite Boutique de la BBH",
+        "shop": "sports",
+        "source": "survey",
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1253174398,
+      "lat": 45.0013025,
+      "lon": -1.1996016,
+      "tags": {
+        "check_date": "2024-08-18",
+        "name": "California Street",
+        "shop": "sports",
+        "source": "survey",
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1253174418,
+      "lat": 45.0012975,
+      "lon": -1.199817,
+      "tags": {
+        "check_date": "2024-08-18",
+        "name": "Billabong",
+        "shop": "sports",
+        "source": "survey",
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1271546015,
+      "lat": 45.0076871,
+      "lon": -1.1951819,
+      "tags": {
+        "leisure": "sports_centre",
+        "name": "Big Mama Surf School",
+        "source": "survey",
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1365421122,
+      "lat": 43.6686433,
+      "lon": -1.3823186,
+      "tags": {
+        "addr:city": "Soorts-Hossegor",
+        "addr:housenumber": "407",
+        "addr:postcode": "40150",
+        "addr:street": "Avenue de la Tuilerie",
+        "name": "Rip Curl - Magasin Technique",
+        "ref:FR:CRTA": "A0013AQU040V503K8F",
+        "shop": "sports",
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1365421211,
+      "lat": 43.6709427,
+      "lon": -1.3896718,
+      "tags": {
+        "addr:city": "Soorts-Hossegor",
+        "addr:housenumber": "128",
+        "addr:postcode": "40150",
+        "addr:street": "Avenue des Charpentiers",
+        "brand": "Billabong",
+        "brand:wikidata": "Q862718",
+        "brand:wikipedia": "en:Billabong (clothing)",
+        "clothes": "men;women",
+        "name": "Billabong Outlet",
+        "opening_hours": "Mo-Sa 10:00-19:00",
+        "phone": "+33558416053",
+        "ref:FR:CRTA": "A0013AQU040V503K9D",
+        "shop": "clothes",
+        "sport": "surfing",
+        "website": "https://www.billabong.fr/",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1390570470,
+      "lat": 48.6934819,
+      "lon": -4.0873542,
+      "tags": {
+        "name": "Mogueric",
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1419294504,
+      "lat": 47.8371723,
+      "lon": -4.3457196,
+      "tags": {
+        "leisure": "sports_centre",
+        "name": "École de Surf de Bretagne (La Torche)",
+        "phone": "+33 2 98 58 53 80",
+        "sport": "surfing",
+        "website": "https://www.twenty-nine.com/surfcamp/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1422600097,
+      "lat": -17.5343497,
+      "lon": -149.58443,
+      "tags": {
+        "name": "La digue Reef",
+        "natural": "reef",
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1422606718,
+      "lat": -17.8667261,
+      "lon": -149.2537018,
+      "tags": {
+        "name": "Teahupoo Reef",
+        "sport": "surfing",
+        "tourism": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1927858966,
+      "lat": -21.2627655,
+      "lon": 55.3336916,
+      "tags": {
+        "leisure": "sports_centre",
+        "name": "École de surf du sud",
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1966226206,
+      "lat": 16.3363288,
+      "lon": -61.3621452,
+      "tags": {
+        "leisure": "sports_centre",
+        "name": "Spot de Damencourt",
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2255892158,
+      "lat": 48.8391592,
+      "lon": 2.2780349,
+      "tags": {
+        "contact:city": "Paris",
+        "contact:housenumber": "80",
+        "contact:postcode": "75015",
+        "contact:street": "Rue Balard",
+        "contact:website": "http://www.auspot-shop.fr/boutique/liste_rayons.cfm",
+        "name": "Au Spot",
+        "shop": "sports",
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2737126520,
+      "lat": 48.5305734,
+      "lon": -4.7479326,
+      "tags": {
+        "email": "sweetspot@hotmail.fr",
+        "leisure": "sports_centre",
+        "name": "Sweetspot - École de surf",
+        "phone": "+33 6 86 14 18 69",
+        "sport": "surfing",
+        "website": "http://sweetspotsurf.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2785641712,
+      "lat": 44.4489986,
+      "lon": -1.2569047,
+      "tags": {
+        "name": "La nord",
+        "note": "level : vert good time : bon à mi-marée, surfable entre 1m et 2m avec vent faible ou vent d'est info pratique : bon pour débuter - cours de surf en face - trop de monde l'été",
+        "sport": "surfing",
+        "wave": "guide"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2987458633,
+      "lat": 43.8766748,
+      "lon": -1.3029698,
+      "tags": {
+        "check_date": "2024-06-05",
+        "name": "OnePalm",
+        "shop": "surf",
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2987458833,
+      "lat": 43.8773459,
+      "lon": -1.302425,
+      "tags": {
+        "check_date": "2024-06-05",
+        "check_date:opening_hours": "2023-01-30",
+        "name": "Natura - École Surf Shop",
+        "opening_hours:signed": "no",
+        "shop": "surf",
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3022995132,
+      "lat": 43.6523748,
+      "lon": -1.4452368,
+      "tags": {
+        "name": "OGM Bodyboard Shop",
+        "opening_hours": "Mo-Sa 10:00-12:00,15:00-18:30",
+        "second_hand": "no",
+        "shop": "outdoor",
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3230960894,
+      "lat": 48.2260522,
+      "lon": -4.5045803,
+      "tags": {
+        "addr:city": "Crozon",
+        "addr:housenumber": "4",
+        "addr:postcode": "29160",
+        "addr:street": "Rue Kreisker",
+        "check_date:opening_hours": "2025-03-15",
+        "email": "absolutesurf@hotmail.com",
+        "name": "Absolute SURF - ESB CROZON-MORGAT",
+        "opening_hours:signed": "no",
+        "phone": "+33298 170196",
+        "shop": "sports",
+        "source": "cadastre-dgi-fr source : Direction Générale des Finances Publiques - Cadastre. Mise à jour : 2014",
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3980204287,
+      "lat": 47.7479472,
+      "lon": -3.3588882,
+      "tags": {
+        "branch": "Line",
+        "brand": "Action",
+        "brand:wikidata": "Q2634111",
+        "name": "Action",
+        "opening_hours": "Tu-Sa 10:00-12:00, 14:00-19:00",
+        "shop": "variety_store",
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4498542654,
+      "lat": 15.9998932,
+      "lon": -61.6033831,
+      "tags": {
+        "addr:street": "Rue de la Plage",
+        "club": "sport",
+        "name": "Poyo Surf Club",
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4511511355,
+      "lat": 47.2656603,
+      "lon": -2.4567718,
+      "tags": {
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4605840240,
+      "lat": 44.8631484,
+      "lon": -0.5740218,
+      "tags": {
+        "contact:housenumber": "174",
+        "contact:phone": "+33 9 83 29 67 74",
+        "contact:postcode": "33300",
+        "contact:street": "Cours du Médoc",
+        "contact:website": "http://www.wave-surf-cafe.fr/",
+        "internet_access": "wlan",
+        "leisure": "sports_centre",
+        "name": "Wave Surf Café",
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4634752333,
+      "lat": 46.6974066,
+      "lon": -1.9126835,
+      "tags": {
+        "leisure": "sports_centre",
+        "name": "The Glassy House",
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4690648430,
+      "lat": 16.3257008,
+      "lon": -61.3055516,
+      "tags": {
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4965718510,
+      "lat": 43.5958315,
+      "lon": -1.4635527,
+      "tags": {
+        "addr:city": "Labenne",
+        "addr:housenumber": "30",
+        "addr:postcode": "40530",
+        "addr:street": "Avenue de la Plage",
+        "contact:email": "contact@surf-labenne.com",
+        "contact:facebook": "https://www.facebook.com/SurfLabShop",
+        "description": "Location, vente et réparation  de vélos. En tant qu'établissement labellisé Accueil Vélo, il dispose d'une pompe pour regonfler vos bicyclettes.",
+        "email": "contact@surf-labenne.com",
+        "name": "Surf'Lab Location de vélo et surf",
+        "operator": "Marianne Junjaud Thonne",
+        "phone": "+33 5 59 45 71 09",
+        "ref:FR:CRTA": "ASCAQU040FS000ME",
+        "service:bicycle:pump": "yes",
+        "service:bicycle:rental": "yes",
+        "service:bicycle:repair": "yes",
+        "service:bicycle:retail": "yes",
+        "shop": "bicycle",
+        "sport": "surfing",
+        "stroller": "yes",
+        "website": "https://www.surf-labenne.com/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5111856736,
+      "lat": 43.7923404,
+      "lon": -1.4101943,
+      "tags": {
+        "addr:city": "Vieux-Boucau-les-Bains",
+        "addr:housenumber": "23",
+        "addr:postcode": "40480",
+        "addr:street": "Avenue des Sables d'Or",
+        "amenity": "surf_school",
+        "club": "sport",
+        "email": "vieuxboucau@ecoledesurf.com",
+        "name": "École de Surf Côte Française Vieux-Boucau",
+        "phone": "+33 6 81 91 56 10",
+        "ref:FR:CRTA": "ASCAQU04001K7IS9",
+        "short_name": "ESCF Vieux-Boucau",
+        "sport": "surfing",
+        "website": "https://ecoledesurf.com/ecoles/surf-vieux-boucau/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5282548071,
+      "lat": 43.7092047,
+      "lon": 7.259182,
+      "tags": {
+        "contact:facebook": "https://www.facebook.com/quai34nic/?fref=ts",
+        "email": "contact@quai34nice.com",
+        "name": "Quai 34",
+        "opening_hours": "Mo-Sa 09:30-19:15; Su off",
+        "phone": "+33 4 93 98 61 20",
+        "ref:FR:SIRET": "81845712900018",
+        "shop": "clothes",
+        "source": "INSEE - 06/2019",
+        "sport": "surfing",
+        "website": "https://quai34nice.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5406105334,
+      "lat": 43.573925,
+      "lon": -1.4704285,
+      "tags": {
+        "club": "sport",
+        "name": "Surf Academy",
+        "ref:FR:CRTA": "ASCAQU040FS001GJ",
+        "sport": "surfing",
+        "website": "http://www.ondres-surf-academy.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5406105335,
+      "lat": 43.577298,
+      "lon": -1.4875259,
+      "tags": {
+        "addr:city": "Ondres",
+        "addr:housenumber": "1621",
+        "addr:postcode": "40440",
+        "addr:street": "Avenue de la Plage",
+        "club": "sport",
+        "name": "Go and Surf",
+        "network": "charte durable palo",
+        "opening_hours": "Mo-Su 09:00-18:00",
+        "phone": "+33 6 10 23 35 50",
+        "ref:FR:CRTA": "ASCAQU04001M8AXC",
+        "sport": "surfing",
+        "website": "http://www.goandsurf.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5406105336,
+      "lat": 43.5582226,
+      "lon": -1.498175,
+      "tags": {
+        "addr:city": "Tarnos",
+        "addr:housenumber": "100C",
+        "addr:postcode": "40440",
+        "addr:street": "Avenue Julian Grimau",
+        "club": "sport",
+        "email": "surfescapade@yahoo.fr",
+        "name": "Surfescapade",
+        "network": "charte durable palo",
+        "phone": "+33 6 69 57 76 22",
+        "ref:FR:CRTA": "ASCAQU040FS000RJ",
+        "sport": "surfing",
+        "website": "https://www.surf-escapade.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5464291537,
+      "lat": 43.7921763,
+      "lon": -1.412746,
+      "tags": {
+        "addr:city": "Vieux-Boucau-les-Bains",
+        "addr:postcode": "40480",
+        "addr:street": "Plage Nord",
+        "amenity": "surf_school",
+        "club": "sport",
+        "email": "info@surfclub-vieuxboucau.com",
+        "name": "Vieux Boucau Surf Club",
+        "phone": "+33 5 58 48 30 70",
+        "ref:FR:CRTA": "ASCAQU04001K7GHK",
+        "sport": "surfing",
+        "website": "https://surfclub-vieuxboucau.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5630623266,
+      "lat": 14.7708003,
+      "lon": -60.8986706,
+      "tags": {
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5826913428,
+      "lat": 45.8696787,
+      "lon": -1.2590816,
+      "tags": {
+        "building": "cabin",
+        "leisure": "pitch",
+        "name": "Take Off Surf",
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5843735745,
+      "lat": 48.8224575,
+      "lon": -3.3551555,
+      "tags": {
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5971676523,
+      "lat": 46.6844029,
+      "lon": -1.9296152,
+      "tags": {
+        "addr:city": "Saint-Gilles-Croix-de-Vie",
+        "addr:housenumber": "51",
+        "addr:postcode": "85800",
+        "leisure": "sports_centre",
+        "name": "Mahalo - Ecole de surf",
+        "sport": "surfing",
+        "website": "https://www.mahalosurf.fr/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5979660050,
+      "lat": 43.0778073,
+      "lon": 5.8908396,
+      "tags": {
+        "name": "Surf spot - Les Sablettes",
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5979661094,
+      "lat": 43.108409,
+      "lon": 5.8124211,
+      "tags": {
+        "name": "Surf spot",
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6469966883,
+      "lat": 50.6305908,
+      "lon": 3.0470527,
+      "tags": {
+        "contact:facebook": "YourideSurfshop",
+        "contact:phone": "+33 3 59 05 30 99",
+        "contact:website": "https://www.youride.fr/",
+        "name": "YouRide",
+        "opening_hours": "Tu-Sa 10:00-12:30,14:30-19:00",
+        "shop": "sports",
+        "sport": "surfing",
+        "survey:date": "2019-04"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6577392285,
+      "lat": 43.4773685,
+      "lon": -1.5668638,
+      "tags": {
+        "leisure": "sports_centre",
+        "name": "Jo Moraiz Surf School",
+        "sport": "surfing",
+        "website": "https://jomoraiz.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6605238110,
+      "lat": 43.5059635,
+      "lon": -1.5373216,
+      "tags": {
+        "amenity": "surf_school",
+        "name": "École de surf Uhaina",
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6681139334,
+      "lat": 47.9386531,
+      "lon": -4.4002078,
+      "tags": {
+        "amenity": "surf_school",
+        "club": "sport",
+        "name": "École de Surf de Bretagne de Penhors",
+        "phone": "+33 6 75 23 10 86",
+        "sport": "surfing",
+        "website": "https://www.esb-penhors.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7112479119,
+      "lat": 43.4251495,
+      "lon": -1.6103145,
+      "tags": {
+        "addr:city": "Guéthary",
+        "addr:street": "Rue du Comte G. de Swiecinski",
+        "contact:housenumber": "94",
+        "contact:website": "https://www.ecoledesurfguethary.com",
+        "description": "Christophe Reinhardt et ses moniteurs diplômés vous accueillent sur les plages de Guéthary et Bidart, deux villages authentiques et préservés, mais aussi sur les spots de Biarritz et Saint-Jean-de-Luz. L'école de surf Quiksilver vous propose des stages e",
+        "email": "christophe.reinhardt@yahoo.fr",
+        "name": "École de surf Christophe Reinhardt",
+        "office": "company",
+        "phone": "+33 6 88 57 38 26",
+        "phone_1": "+33 6 85 63 90 06",
+        "postal_code": "64210",
+        "sport": "surfing",
+        "website": "https://www.ecole-de-surf-bidart.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7148158745,
+      "lat": 48.6295835,
+      "lon": -4.5296184,
+      "tags": {
+        "name": "Spor de surf la grève blanche",
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7174788866,
+      "lat": 45.8086658,
+      "lon": 4.8562943,
+      "tags": {
+        "name": "Impact Surfshop",
+        "opening_hours": "Tu-Fr 09:30-12:30,14:30-19:00; Sa 10:00-19:00",
+        "phone": "+33 4 72 27 59 88",
+        "ref:FR:SIRET": "48201012100028",
+        "shop": "sports",
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7204448240,
+      "lat": 48.0464029,
+      "lon": -4.7069633,
+      "tags": {
+        "name": "Trépassés",
+        "name:en": "Trépassés surf point",
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7204452693,
+      "lat": 48.2754769,
+      "lon": -4.6180704,
+      "tags": {
+        "name": "Pen Hat break",
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7204468674,
+      "lat": 48.012014,
+      "lon": -4.5977195,
+      "tags": {
+        "name": "Cabestan break point",
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7554953698,
+      "lat": 16.2414728,
+      "lon": -61.3385481,
+      "tags": {
+        "check_date": "2024-04-04",
+        "name": "Spot du helleux",
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7562930002,
+      "lat": 43.4270931,
+      "lon": -1.6042681,
+      "tags": {
+        "addr:city": "Bidart",
+        "addr:housenumber": "34",
+        "addr:postcode": "64210",
+        "addr:street": "Chemin de Parlementia",
+        "check_date:opening_hours": "2025-08-26",
+        "name": "ProSurf Shop",
+        "opening_hours:signed": "no",
+        "phone": "+335 59 54 73 14",
+        "shop": "sports",
+        "sport": "surfing",
+        "website": "https://surf-shop-guethary-bidart.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7603589196,
+      "lat": 48.6927701,
+      "lon": -3.6475743,
+      "tags": {
+        "amenity": "surf_school",
+        "check_date": "2023-11-19",
+        "club": "sport",
+        "contact:facebook": "Surfplaya",
+        "email": "max@surfplaya.com",
+        "name": "Surfplaya",
+        "phone": "+33 626604502",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2020",
+        "sport": "surfing",
+        "website": "https://surfplaya.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7610098441,
+      "lat": -17.6329943,
+      "lon": -149.6155773,
+      "tags": {
+        "description": "spot de surf avec vagues au bord de la plage avec cailloux connue surtout par les locaux",
+        "sport": "surfing",
+        "wetland": "spot_de_surf"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7649459746,
+      "lat": 43.3893499,
+      "lon": -1.6599997,
+      "tags": {
+        "addr:city": "Saint-Jean-de-Luz",
+        "addr:housenumber": "59",
+        "addr:postcode": "64500",
+        "addr:street": "Rue Léon Gambetta",
+        "brand": "Quiksilver",
+        "brand:wikidata": "Q1329463",
+        "brand:wikipedia": "en:Quiksilver",
+        "name": "Quiksilver",
+        "opening_hours": "09:30-13:00,14:00-18:00",
+        "payment:cards": "yes",
+        "payment:credit_cards": "yes",
+        "payment:telephone_cards": "yes",
+        "phone": "+33559261758",
+        "ref:FR:NAF": "4771Z",
+        "ref:FR:SIREN": "418472916",
+        "ref:FR:SIRET": "41847291600802",
+        "shop": "clothes",
+        "source": "INSEE - 2024-10",
+        "sport": "surfing",
+        "website": "https://www.quiksilver.fr/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7652898571,
+      "lat": 43.3932096,
+      "lon": -1.6852623,
+      "tags": {
+        "amenity": "surf_school",
+        "description": "Activités proposées :- Stand-Up Paddle- Pêche-Wave Rafting- Wave ski- Pyrogue Hawaïenne - Kayak de mer",
+        "phone": "+33559472167",
+        "sport": "surfing",
+        "tourism": "attraction",
+        "website": "http://www.atlantic-pirogue.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7653001257,
+      "lat": 43.3899846,
+      "lon": -1.6598039,
+      "tags": {
+        "amenity": "surf_school",
+        "name": "École de surf Français Hendaia",
+        "phone": "+335 59 55 20 28",
+        "sport": "surfing",
+        "website": "https://www.ecoledesurf-hendaye.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7653010317,
+      "lat": 43.4072707,
+      "lon": -1.6207022,
+      "tags": {
+        "amenity": "surf_school",
+        "description": "Différents types d'activités proposées : équitation, cours de surf, baptême de l'air en ULM, paramoteur, plongée, bouée tractée, pirogue, stand up paddle, surf, kayak, voile, jet ski, fly fish, wave rafting, snorkelling....",
+        "name": "Aventure 64",
+        "phone": "+336 10 79 57 74",
+        "sport": "surfing",
+        "website": "https://aventure64.fr/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7653033351,
+      "lat": 43.3878708,
+      "lon": -1.663254,
+      "tags": {
+        "addr:city": "Saint-Jean-de-Luz",
+        "addr:housenumber": "6",
+        "addr:postcode": "64500",
+        "addr:street": "Rue Léon Gambetta",
+        "amenity": "surf_school",
+        "contact:facebook": "https://facebook/Ecole%20de%20surf%20gold%20coast",
+        "description": "Types de sports : Surf, Stand-up-paddle-board",
+        "email": "contact@ecolesurf-goldcoast.com",
+        "name": "Chica Beach",
+        "phone": "+33 5 59 20 31 44",
+        "phone_1": "+33 6 70 62 07 07",
+        "shop": "clothes",
+        "sport": "surfing",
+        "website": "http://www.ecoledesurfhendaye.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7655159920,
+      "lat": 43.3877695,
+      "lon": -1.6633482,
+      "tags": {
+        "addr:city": "Saint-Jean-de-Luz",
+        "addr:housenumber": "11",
+        "addr:street": "Rue Tourasse",
+        "amenity": "surf_school",
+        "description": "Offre de cours de surf, particuliers ou collectifs.",
+        "email": "didiervallero@yahoo.fr",
+        "name": "Profdesurf.com",
+        "phone": "+33 6 01 90 56 40",
+        "postal_code": "64500",
+        "sport": "surfing",
+        "website": "http://profdesurf.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7655202041,
+      "lat": 43.3879858,
+      "lon": -1.6627045,
+      "tags": {
+        "addr:city": "Saint-Jean-de-Luz",
+        "addr:housenumber": "16",
+        "addr:postcode": "64500",
+        "addr:street": "Rue Léon Gambetta",
+        "brand": "Billabong",
+        "brand:wikidata": "Q862718",
+        "brand:wikipedia": "en:Billabong (clothing)",
+        "clothes": "men;women",
+        "email": "info@newschoolsurf.com",
+        "name": "Billabong",
+        "opening_hours": "10:00-12:30,14:30-19:00; Sa 10:00-19:00",
+        "payment:credit_cards": "yes",
+        "phone": "+33 5 59 26 07 93",
+        "phone_1": "+33 6 89 33 35 54",
+        "ref:FR:NAF": "4771Z",
+        "ref:FR:SIREN": "418472916",
+        "ref:FR:SIRET": "41847291600976",
+        "shop": "clothes",
+        "source": "INSEE - 2024-10",
+        "sport": "surfing",
+        "website": "http://www.newschoolsurf.fr/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7655236613,
+      "lat": 43.3887332,
+      "lon": -1.6645489,
+      "tags": {
+        "addr:city": "Saint-Jean-de-Luz",
+        "addr:housenumber": "21",
+        "addr:postcode": "64500",
+        "addr:street": "Rue de la République",
+        "amenity": "surf_school",
+        "email": "bakunsurf@gmail.com",
+        "name": "Boutique 21 - Bakun école de surf",
+        "phone": "+33 6 07 08 09 34",
+        "phone_1": "+33 6 80 91 38 84",
+        "shop": "yes",
+        "sport": "surfing",
+        "website": "https://www.bakunsurf.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7667130326,
+      "lat": 44.998042,
+      "lon": -1.2010694,
+      "tags": {
+        "leisure": "sports_centre",
+        "name": "UCPA - École de Surf",
+        "source": "survey",
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7667130327,
+      "lat": 44.9979183,
+      "lon": -1.2012126,
+      "tags": {
+        "addr:housenumber": "105",
+        "addr:street": "Résidence Horizon Marin",
+        "check_date": "2024-08-20",
+        "email": "contact@ocean-ride.com",
+        "name": "Ocean Ride Ecole de Surf",
+        "opening_hours": "09:00-19:00 (Juin - Septembre)",
+        "payment:cards": "yes",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "phone": "+33 5 56 60 81 23",
+        "shop": "sports",
+        "source": "survey;https://www.ocean-ride.com",
+        "sport": "surfing",
+        "website": "https://www.ocean-ride.com",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7728533056,
+      "lat": 45.0012151,
+      "lon": -1.1980869,
+      "tags": {
+        "name": "Hurley",
+        "shop": "sports",
+        "source": "survey",
+        "sport": "surfing",
+        "survey:date": "2023-08-16"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7846586586,
+      "lat": 44.9234038,
+      "lon": -0.3188823,
+      "tags": {
+        "name": "Mascaret de Saint Pardon",
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7860930363,
+      "lat": 46.422566,
+      "lon": -1.4925309,
+      "tags": {
+        "name": "Bud Suf Shop",
+        "shop": "outdoor",
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7861017829,
+      "lat": 45.0051195,
+      "lon": -1.2010771,
+      "tags": {
+        "check_date": "2023-07-29",
+        "name": "Banana Surf Shop",
+        "shop": "sports",
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7894508171,
+      "lat": 48.8154329,
+      "lon": -3.455862,
+      "tags": {
+        "club": "sport",
+        "contact:facebook": "SevenIslandsSurfClub",
+        "leisure": "sports_centre",
+        "name": "Seven Island Surf Club",
+        "phone": "+33 6 73 72 12 68",
+        "sport": "surfing",
+        "website": "https://www.7islandsurfclub.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7963469596,
+      "lat": 47.5980173,
+      "lon": -3.1146213,
+      "tags": {
+        "club": "sport",
+        "description": "Bar Restaurant Location de surf",
+        "name": "École de Surf de Bretagne",
+        "name:br": "Skol-seurfiñ Breizh",
+        "rental": "surf",
+        "short_name": "ESB",
+        "source:name:br": "proper translation",
+        "sport": "surfing",
+        "website": "https://www.ecole-surf.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7993180624,
+      "lat": 45.0827076,
+      "lon": -1.1876897,
+      "tags": {
+        "name": "He'Enalu Surf Shop",
+        "shop": "sports",
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7993180627,
+      "lat": 45.0821369,
+      "lon": -1.1899623,
+      "tags": {
+        "shop": "sports",
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8111298515,
+      "lat": 42.7018496,
+      "lon": 2.9412004,
+      "tags": {
+        "fee": "yes",
+        "leisure": "sports_centre",
+        "name": "Wave Surf Café",
+        "opening_hours": "Mo-Su 10:00-21:00",
+        "phone": "+33 4 68352581",
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8242380960,
+      "lat": 49.5677732,
+      "lon": -1.8430208,
+      "tags": {
+        "addr:city": "Siouville-Hague",
+        "addr:housenumber": "14",
+        "addr:postcode": "50340",
+        "addr:street": "Boulevard Ferdinand Deveaud",
+        "club": "sport",
+        "name": "Cotentin surf club",
+        "phone": "+33 2 33 41 39 58",
+        "sport": "surfing",
+        "website": "https://www.cotentinsurfclub.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8303473555,
+      "lat": 45.7680178,
+      "lon": 4.9797111,
+      "tags": {
+        "access": "no",
+        "addr:city": "Décines-Charpieu",
+        "addr:housenumber": "2",
+        "addr:postcode": "69150",
+        "addr:street": "Avenue Simone Veil",
+        "fee": "yes",
+        "leisure": "sports_centre",
+        "name": "City Surf Park",
+        "sport": "surfing",
+        "start_date": "2021"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8319044615,
+      "lat": 43.7864106,
+      "lon": -1.4118282,
+      "tags": {
+        "addr:city": "Vieux-Boucau-les-Bains",
+        "addr:postcode": "40480",
+        "addr:street": "Rue des Goélands",
+        "amenity": "surf_school",
+        "club": "sport",
+        "email": "contact@surf-vieuxboucau.com",
+        "name": "Surf Univers",
+        "phone": "+33 5 58 48 28 51",
+        "ref:FR:CRTA": "ASCAQU04001K7INO",
+        "sport": "surfing",
+        "website": "https://www.surf-vieuxboucau.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8319095261,
+      "lat": 43.7880103,
+      "lon": -1.4122788,
+      "tags": {
+        "addr:city": "Vieux-Boucau-les-Bains",
+        "addr:housenumber": "48",
+        "addr:postcode": "40480",
+        "addr:street": "Avenue de la Plage",
+        "amenity": "surf_school",
+        "club": "sport",
+        "email": "contact@dreamlandes.fr",
+        "name": "École de surf Dreamlandes",
+        "phone": "+33 6 19 40 98 04",
+        "ref:FR:CRTA": "ASCAQU040FS0004H",
+        "sport": "surfing",
+        "website": "https://www.dreamlandes.fr/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8319096470,
+      "lat": 43.7865797,
+      "lon": -1.411763,
+      "tags": {
+        "addr:city": "Vieux-Boucau-les-Bains",
+        "addr:postcode": "40480",
+        "addr:street": "Rue des Goëlands",
+        "amenity": "surf_school",
+        "club": "sport",
+        "email": "info@alternativesurfschool.com",
+        "name": "Alternative Surf School",
+        "phone": "+33 6 03 06 06 42",
+        "ref:FR:CRTA": "ASCAQU040V5031CW",
+        "sport": "surfing",
+        "website": "http://www.alternativesurfschool.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8337366689,
+      "lat": 43.6479706,
+      "lon": -1.4454435,
+      "tags": {
+        "addr:city": "Capbreton",
+        "addr:housenumber": "3",
+        "addr:postcode": "40130",
+        "addr:street": "Rue de la Savane",
+        "check_date": "2024-08-18",
+        "club": "sport",
+        "email": "contact@santocha.org",
+        "name": "Santocha Surf Club",
+        "phone": "+33 5 58 72 33 80",
+        "ref:FR:CRTA": "ASCAQU040V50GFC7",
+        "sport": "surfing",
+        "website": "https://www.santocha.org"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8345531457,
+      "lat": 43.8021311,
+      "lon": -1.3740393,
+      "tags": {
+        "addr:city": "Messanges",
+        "addr:housenumber": "1060",
+        "addr:postcode": "40660",
+        "addr:street": "Chemin de Camentron",
+        "contact:phone": "+33 6 32 21 66 36",
+        "leisure": "resort",
+        "name": "Nature Surf Camp",
+        "network": "charte durable palo",
+        "phone": "+33 6 32 21 66 36",
+        "ref:FR:CRTA": "HCOLLAQU040V50NAAV",
+        "sport": "surfing",
+        "website": "https://www.nature-surf-camp.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8363841365,
+      "lat": 43.6525361,
+      "lon": -1.4452054,
+      "tags": {
+        "addr:city": "Capbreton",
+        "addr:postcode": "40130",
+        "addr:street": "Boulevard François Mitterrand",
+        "name": "Ted Surf Shop",
+        "shop": "outdoor",
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8499654526,
+      "lat": 43.6603707,
+      "lon": -1.4431901,
+      "tags": {
+        "addr:city": "Soorts-Hossegor",
+        "addr:housenumber": "305",
+        "addr:postcode": "40150",
+        "addr:street": "Boulevard de la Dune",
+        "club": "sport",
+        "description": "L’école de surf SURFTRIP vous accueille sur la plus belle plage d’HOSSEGOR mondialement connue pour la qualité de ses vagues. Située PLAGE SUD face à l’océan, SURFTRIP vous accueille d’AVRIL à OCTOBRE et vous propose différentes formules afin de glisser",
+        "email": "contact@surftrip.fr",
+        "name": "Surftrip Surfschool",
+        "phone": "+335 58 41 91 06",
+        "ref:FR:CRTA": "ASCAQU04001OYX8C",
+        "shop": "rental",
+        "sport": "surfing",
+        "website": "https://www.surftrip.fr/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8521144860,
+      "lat": 43.6635605,
+      "lon": -1.442249,
+      "tags": {
+        "addr:city": "Soorts-Hossegor",
+        "addr:housenumber": "22",
+        "addr:postcode": "40150",
+        "addr:street": "Impasse de la Digue Nord",
+        "club": "sport",
+        "description": "L'Hossegor Surf Club, le club formateur des meilleurs surfeurs français, ouvert à l'année, vous fait découvrir les plaisirs de la glisse. Vous progresserez grâce aux 25 ans d'expérience de son centre d'entraînement. En fonction de votre niveau et de vos",
+        "email": "contact@hossegor-surfclub.com",
+        "name": "Hossegor Surf Club",
+        "phone": "+335 58 43 80 52",
+        "ref:FR:CRTA": "ASCAQU04001OYX82",
+        "shop": "rental",
+        "sport": "surfing",
+        "website": "https://www.hossegor-surfclub.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8524681526,
+      "lat": 43.6606468,
+      "lon": -1.4440205,
+      "tags": {
+        "addr:city": "Soorts-Hossegor",
+        "addr:postcode": "40150",
+        "addr:street": "Place du Point d'Or",
+        "club": "sport",
+        "description": "L’école de surf Watermansport vous accueille, sur la plage Sud d’Hossegor, d’Avril à Octobre pour découvrir ou vous perfectionner dans l’activité Surf et Stand Up Paddleboard.",
+        "name": "Watermansport Surfschool",
+        "phone": "+33 6 29 62 15 81",
+        "ref:FR:CRTA": "ASCAQU040V5008I9",
+        "sport": "surfing",
+        "website": "https://watermansport-surfschool.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8621061270,
+      "lat": 43.6606434,
+      "lon": -1.443105,
+      "tags": {
+        "addr:city": "Soorts-Hossegor",
+        "addr:housenumber": "385",
+        "addr:postcode": "40150",
+        "addr:street": "Boulevard de la Dune",
+        "club": "sport",
+        "description": "Depuis 1986, nous proposons des cours et stages en surf et bodyboard (initiation et perfectionnement) dans une ambiance familiale. Cours particulier de stand up paddle. Location/vente de matériel de surf.",
+        "name": "Tao Magic Glisse Surfschool",
+        "opening_hours": "Mo-Su 09:00-18:00",
+        "phone": "+33 5 58 43 92 90",
+        "ref:FR:CRTA": "ASCAQU04001OYX83",
+        "sport": "surfing",
+        "website": "https://tao-magic-glisse.com/tarifs/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8628115923,
+      "lat": 43.6796652,
+      "lon": -1.4400482,
+      "tags": {
+        "addr:city": "Soorts-Hossegor",
+        "addr:housenumber": "376",
+        "addr:place": "Plage des Culs Nus",
+        "addr:postcode": "40150",
+        "club": "sport",
+        "description": "Forts de plus de 15 ans d'expérience dans l'enseignement du surf, Julie, Damien et leur équipe vous accueillent dans la découverte du surf dans une ambiance conviviale et détendue, à partir de 5 ans.",
+        "name": "Chipiron Surfschool",
+        "phone": "+33 6 61 01 58 75",
+        "ref:FR:CRTA": "ASCAQU040V508KGW",
+        "sport": "surfing",
+        "website": "https://chipironsurfschool.fr/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8628121083,
+      "lat": 43.6801444,
+      "lon": -1.4401877,
+      "tags": {
+        "addr:city": "Soorts-Hossegor",
+        "addr:postcode": "40150",
+        "addr:street": "Naturistes",
+        "club": "sport",
+        "contact:facebook": "hossegor_surf_center",
+        "description": "Vivez le concept \"FUN & PROGRESSION\" sur le meilleur surf-spot d'Hossegor ! Notre équipe de professionnels propose initiations, perfectionnements, cours privés sur mesure, analyses vidéos et location de matériel haut de gamme.",
+        "name": "Hossegor surf Center",
+        "opening_hours": "Mo-Sa 08:00-20:00",
+        "phone": "+33 6 30 99 84 07",
+        "ref:FR:CRTA": "ASCAQU040V508KL0",
+        "sport": "surfing",
+        "website": "https://www.hossegorsurfcenter.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8729176586,
+      "lat": 43.6720664,
+      "lon": -1.3829623,
+      "tags": {
+        "addr:city": "Soorts-Hossegor",
+        "addr:housenumber": "876",
+        "addr:postcode": "40150",
+        "addr:street": "Avenue des Rémouleurs",
+        "name": "bodyboard center",
+        "phone": "+3332187966",
+        "ref:FR:CRTA": "A0013AQU040V50Q0QG",
+        "shop": "sports",
+        "sport": "surfing",
+        "website": "https://www.bodyboardcenter.com/en/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8739730781,
+      "lat": 45.0035336,
+      "lon": -1.2010664,
+      "tags": {
+        "name": "Mata-Hari Surf Shop",
+        "shop": "sports",
+        "source": "survey",
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8739730788,
+      "lat": 45.0030494,
+      "lon": -1.2012432,
+      "tags": {
+        "name": "Surf City",
+        "shop": "sports",
+        "source": "survey",
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8776027164,
+      "lat": 43.6865269,
+      "lon": -1.4337215,
+      "tags": {
+        "addr:city": "SEIGNOSSE",
+        "addr:housenumber": "9",
+        "addr:postcode": "40510",
+        "addr:street": "Avenue Jean Moulin",
+        "club": "sport",
+        "email": "jerry@jerry-bike-rental.com",
+        "name": "Jerry Bike",
+        "phone": "+33 6 59 14 02 24",
+        "ref:FR:CRTA": "ASCAQU040V507ID0",
+        "service:bicycle:pump": "yes",
+        "service:bicycle:rental": "yes",
+        "service:bicycle:repair": "yes",
+        "service:bicycle:retail": "yes",
+        "service:bicycle:sales": "yes",
+        "shop": "bicycle",
+        "sport": "surfing",
+        "website": "https://jerry-bike-rental.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8794561340,
+      "lat": 43.6620186,
+      "lon": -1.4431383,
+      "tags": {
+        "addr:city": "Soorts-Hossegor",
+        "addr:housenumber": "106",
+        "addr:postcode": "40150",
+        "addr:street": "Avenue des Syngnathes",
+        "club": "sport",
+        "description": "Ecole de surf et de natation ouverte toute l'année. Notre priorité est de vous apprendre à surfer et de vous rendre autonome !",
+        "name": "Yosurf School",
+        "phone": "+33 6 88 79 17 31",
+        "ref:FR:CRTA": "ASCAQU040FS001OI",
+        "sport": "surfing",
+        "website": "https://hossegor-surf.fr/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8831557489,
+      "lat": 48.6626608,
+      "lon": -1.988943,
+      "tags": {
+        "name": "Zephyr",
+        "opening_hours": "Mo-Su 10:00-19:00",
+        "phone": "0621929893",
+        "ref:FR:SIRET": "89407388100027",
+        "shop": "sports",
+        "sport": "surfing",
+        "website": "https://zephyrshop.fr"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8839219309,
+      "lat": 42.8409463,
+      "lon": 3.0394341,
+      "tags": {
+        "name": "Surf Shop Huraca",
+        "shop": "sports",
+        "source": "survey 2018",
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8846022446,
+      "lat": 43.672065,
+      "lon": -1.3841108,
+      "tags": {
+        "addr:city": "Soorts-Hossegor",
+        "addr:housenumber": "399",
+        "addr:postcode": "40150",
+        "addr:street": "Avenue des Forgerons",
+        "name": "Hurricane",
+        "opening_hours": "Mo-Fr 09:00-18:00",
+        "phone": "+33 5 58 41 08 19",
+        "shop": "sports",
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8909961422,
+      "lat": 43.1894434,
+      "lon": 3.1988133,
+      "tags": {
+        "description": "École de voile et de kitesurf",
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8941898062,
+      "lat": 45.3640105,
+      "lon": -1.1582708,
+      "tags": {
+        "club": "sport",
+        "name": "École de surf",
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9070636034,
+      "lat": 45.3484628,
+      "lon": -1.1584101,
+      "tags": {
+        "club": "sport",
+        "name": "Mayasurfschool",
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9470861501,
+      "lat": 43.6654206,
+      "lon": -1.4151608,
+      "tags": {
+        "addr:city": "Hossegor",
+        "addr:housenumber": "27",
+        "addr:postcode": "40150",
+        "addr:street": "Avenue de Limoges",
+        "name": "Plonka Surfboards",
+        "phone": "+33 6 26 32 87 59",
+        "shop": "sports",
+        "sport": "surfing",
+        "website": "http://www.plonkasurfboards.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9518986430,
+      "lat": 46.7113414,
+      "lon": -1.9789346,
+      "tags": {
+        "addr:housenumber": "6",
+        "addr:street": "Rue de l'Océan",
+        "name": "Wind'n Surf",
+        "ref:FR:NAF": "4764Z",
+        "ref:FR:SIREN": "882379191",
+        "ref:FR:SIRET": "88237919100027",
+        "shop": "sports",
+        "source": "INSEE - 2024-11",
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9642790108,
+      "lat": 43.6561652,
+      "lon": -1.4414656,
+      "tags": {
+        "addr:city": "Capbreton",
+        "addr:postcode": "40130",
+        "addr:street": "Boulevard Notre-Dame",
+        "club": "sport",
+        "name": "Spirit Surf School",
+        "phone": "+33 6 26 65 32 35",
+        "ref:FR:CRTA": "ASCAQU040V506PRN",
+        "rental": "yes",
+        "sport": "surfing",
+        "website": "https://www.spiritsurfschool.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9643185077,
+      "lat": 43.7988201,
+      "lon": -1.410995,
+      "tags": {
+        "addr:city": "Messanges",
+        "addr:postcode": "40660",
+        "addr:street": "Plage Sud",
+        "amenity": "surf_school",
+        "club": "sport",
+        "email": "ontact@messanges-surf-school.com",
+        "name": "Messanges Surf School",
+        "phone": "+33 6 77 48 73 85",
+        "ref:FR:CRTA": "ASCAQU040FS000OS",
+        "seasonal": "summer",
+        "sport": "surfing",
+        "website": "https://messanges-surf-school.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9643400011,
+      "lat": 43.7995086,
+      "lon": -1.4107703,
+      "tags": {
+        "addr:city": "Messanges",
+        "addr:postcode": "40660",
+        "addr:street": "Plage Sud",
+        "club": "sport",
+        "email": "contact@naeco.fr",
+        "name": "Naéco Ecole Multiglisse",
+        "phone": "+33 6 71 51 12 50",
+        "ref:FR:CRTA": "ASCAQU040FS0019D",
+        "seasonal": "summer",
+        "sport": "surfing",
+        "website": "https://www.naeco.fr/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9643502576,
+      "lat": 43.8527595,
+      "lon": -1.3899696,
+      "tags": {
+        "addr:city": "Moliets-et-Maâ",
+        "addr:postcode": "40660",
+        "addr:street": "10 Place de la Balise",
+        "amenity": "surf_school",
+        "club": "sport",
+        "contact:email": "molietssurfschool@gmail.com",
+        "contact:facebook": "https://www.facebook.com/molietssurfschool",
+        "contact:instagram": "https://www.instagram.com/molietssurfschool/",
+        "contact:phone": "+33 5 40 77 14 84",
+        "contact:website": "https://molietssurfschool.com/",
+        "email": "molietssurfschool@gmail.com",
+        "name": "Moliets Surf School",
+        "phone": "+33 5 40 77 14 84",
+        "ref:FR:CRTA": "ASCAQU040V50K4BA",
+        "sport": "surfing",
+        "website": "https://molietssurfschool.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9645706986,
+      "lat": 43.8528132,
+      "lon": -1.3896361,
+      "tags": {
+        "addr:city": "Moliets-et-Maâ",
+        "addr:housenumber": "3",
+        "addr:postcode": "40660",
+        "addr:street": "Impasse de la Dune",
+        "amenity": "surf_school",
+        "club": "sport",
+        "email": "maasurf@gmail.com",
+        "name": "Maâ Surf School",
+        "phone": "+33 5 58 48 55 69",
+        "ref:FR:CRTA": "ASCAQU04001YTAPA",
+        "shop": "surf",
+        "sport": "surfing",
+        "website": "https://molietsetmaasurfschool.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9645885380,
+      "lat": 43.855183,
+      "lon": -1.3914169,
+      "tags": {
+        "addr:city": "Moliets-et-Maâ",
+        "addr:postcode": "40660",
+        "club": "sport",
+        "email": "molietssurfschool@gmail.com",
+        "name": "Surfing Courant d'Huchet",
+        "phone": "+33 6 63 38 17 44",
+        "ref:FR:CRTA": "ASCAQU040V50NG06",
+        "sport": "surfing",
+        "website": "https://surfingcourantdhuchet.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9645931263,
+      "lat": 43.8153086,
+      "lon": -1.3781866,
+      "tags": {
+        "addr:city": "Messanges",
+        "addr:housenumber": "2",
+        "addr:postcode": "40660",
+        "addr:street": "Route de la Côte d'Argent",
+        "club": "sport",
+        "phone": "+33 5 58 49 12 11",
+        "ref:FR:CRTA": "ASCAQU040FS00044",
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9681662188,
+      "lat": 43.6489354,
+      "lon": -1.4429911,
+      "tags": {
+        "addr:city": "Capbreton",
+        "addr:housenumber": "81",
+        "addr:postcode": "40130",
+        "addr:street": "Avenue du Maréchal de Lattre de Tassigny",
+        "check_date": "2024-04-22",
+        "club": "sport",
+        "name": "Capbreton Surfer School",
+        "phone": "+33 6 82 43 04 92",
+        "ref:FR:CRTA": "ASCAQU040V508X6S",
+        "sport": "surfing",
+        "website": "https://ecole-surf-capbreton.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9694610960,
+      "lat": 43.7181282,
+      "lon": -1.3530579,
+      "tags": {
+        "addr:city": "Soustons",
+        "addr:housenumber": "280",
+        "addr:postcode": "40140",
+        "addr:street": "Chemin de Bathurt",
+        "email": "claire@naturalsurflodge.com",
+        "leisure": "resort",
+        "name": "Natural Surf Lodge",
+        "network": "charte durable palo",
+        "phone": "+33 6 74 16 02 28",
+        "ref:FR:CRTA": "HCOLLAQU040V50NAAT",
+        "sport": "surfing",
+        "tourism": "guest_house",
+        "website": "https://www.naturalsurflodge.com/surf-camp-france.html"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9695900998,
+      "lat": -17.7780806,
+      "lon": -149.479594,
+      "tags": {
+        "leisure": "park",
+        "name": "Pipe",
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9695999892,
+      "lat": -17.7790256,
+      "lon": -149.4802883,
+      "tags": {
+        "leisure": "park",
+        "name": "Pointe",
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9696025676,
+      "lat": -17.7761584,
+      "lon": -149.483179,
+      "tags": {
+        "leisure": "park",
+        "name": "Maoti papara",
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9696025926,
+      "lat": -17.7649057,
+      "lon": -149.331893,
+      "tags": {
+        "leisure": "park",
+        "name": "Mitirapa",
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9714088821,
+      "lat": 43.6607773,
+      "lon": -1.350496,
+      "tags": {
+        "addr:city": "Angresse",
+        "addr:housenumber": "198",
+        "addr:postcode": "40150",
+        "addr:street": "Lieu-dit le moulin de Sis",
+        "leisure": "resort",
+        "name": "Coco Barn Wood Lodge",
+        "phone": "+33 6 58 06 27 59",
+        "ref:FR:CRTA": "HCOLLAQU040V50PYOI",
+        "sport": "surfing",
+        "website": "https://www.cocobarn.fr/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9773097046,
+      "lat": 44.714819,
+      "lon": -1.250474,
+      "tags": {
+        "amenity": "surf_school",
+        "fixme": "emplacement exact à préciser",
+        "name": "Remi's surf school",
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9792009499,
+      "lat": 43.8519218,
+      "lon": -1.3844465,
+      "tags": {
+        "name": "By the wave surf center",
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9831319123,
+      "lat": 16.4195349,
+      "lon": -61.5359401,
+      "tags": {
+        "name": "Spot du Souffleur",
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9850616634,
+      "lat": 46.6886326,
+      "lon": -1.9382123,
+      "tags": {
+        "addr:city": "Saint-Gilles-Croix-de-Vie",
+        "addr:postcode": "85800",
+        "addr:street": "Avenue Maurice Perray",
+        "club": "sport",
+        "leisure": "sports_centre",
+        "name": "Surfing Club Saint-Gilles",
+        "sport": "surfing",
+        "website": "https://www.surfing-stgilles.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9883477913,
+      "lat": 46.4348182,
+      "lon": -1.658626,
+      "tags": {
+        "club": "sport",
+        "name": "École de surf - Talmont Plage",
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9951918830,
+      "lat": 43.43077,
+      "lon": -1.6000738,
+      "tags": {
+        "addr:city": "Bidart",
+        "addr:postcode": "64210",
+        "check_date": "2024-08-24",
+        "name": "École de surf H2O",
+        "opening_hours": "Mar-Oct PH,Mo-Su 07:00-19:00",
+        "shop": "sports",
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10869049890,
+      "lat": -17.6347685,
+      "lon": -149.616429,
+      "tags": {
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10869049891,
+      "lat": -17.6306828,
+      "lon": -149.6144209,
+      "tags": {
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10869049892,
+      "lat": -17.628907,
+      "lon": -149.6136877,
+      "tags": {
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10914011487,
+      "lat": -21.1644756,
+      "lon": 55.28732,
+      "tags": {
+        "club": "sport",
+        "contact:phone": "+262 693 634 388",
+        "contact:website": "https://ltst974.re/",
+        "name": "Leu Tropical Surf School",
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10973923405,
+      "lat": 43.4774157,
+      "lon": -1.5668472,
+      "tags": {
+        "addr:postcode": "64200",
+        "addr:street": "Boulevard du Prince de Galles",
+        "email": "vaguebasque@yahoo.fr",
+        "leisure": "sports_centre",
+        "name": "La Vague Basque",
+        "phone": "+33 6 62 76 17 32",
+        "sport": "surfing",
+        "website": "https://www.vaguebasque.fr/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10994935221,
+      "lat": 43.577392,
+      "lon": -1.4873496,
+      "tags": {
+        "addr:city": "Ondres",
+        "addr:postcode": "40440",
+        "club": "sport",
+        "name": "Ondres surf académy",
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11080650650,
+      "lat": 48.8212756,
+      "lon": -3.3510098,
+      "tags": {
+        "leisure": "sports_centre",
+        "name": "École de Surf",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11092312905,
+      "lat": 46.6073476,
+      "lon": -1.853907,
+      "tags": {
+        "club": "sport",
+        "description": "École de surf & location",
+        "facebook": "https://www.facebook.com/AtlanticLezardSurfSchool/",
+        "name": "Atlantic Lézard",
+        "phone": "+33 6 83 61 13 07",
+        "sport": "surfing",
+        "website": "https://lezardsurfschool.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11463519537,
+      "lat": 48.6362004,
+      "lon": -2.1208235,
+      "tags": {
+        "addr:city": "Saint-Lunaire",
+        "addr:postcode": "35800",
+        "addr:street": "Digue de Longchamp",
+        "description": "École et location de surf sous forme d'une cabane amovible, présente la moitié de l'année, entre la dune et la plage du Longchamp à Saint-Lunaire.",
+        "email": "robin@emeraudesurfschool.bzh",
+        "name": "Emeraude Surf School",
+        "opening_hours": "Dec-Mar off",
+        "opening_hours:url": "http://www.emeraudesurfschool.bzh",
+        "phone": "+33 6 59 33 02 59",
+        "shop": "sports",
+        "sport": "surfing",
+        "website": "http://www.emeraudesurfschool.bzh"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11463560143,
+      "lat": 48.6350423,
+      "lon": -2.1252484,
+      "tags": {
+        "addr:city": "Saint-Briac-sur-Mer",
+        "addr:postcode": "35800",
+        "addr:street": "Digue de Longchamp",
+        "club": "sport",
+        "description": "Surf Harmony vous propose des cours de surf, stand up paddle, bodyboard, stages, location de planches de surf, ​stand up paddle, bodyboard. Ouvert d'avril à janvier ; sur nov-déc sam-dim ;  vacs de noël  loc de matériel du mardi au dim selon la météo",
+        "email": "surfharmony@gmail.com",
+        "facebook": "surfharmony",
+        "instagram": "surf.harmony",
+        "name": "Surf Harmony",
+        "opening_hours": "Apr-Jan; Nov-Dec Sa-Su",
+        "opening_hours:url": "https://www.surfharmony.com/",
+        "panoramax": "f8265944-0cd5-4b3f-aca6-df0825c6fc36",
+        "phone": "+33 6 16 13 48 08",
+        "sport": "surfing",
+        "website": "https://www.surfharmony.com/",
+        "youtube": "https://www.youtube.com/channel/UCW3ycRMG6Lc8n_CvAyi5Xbg"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11508083578,
+      "lat": -21.1642262,
+      "lon": 55.2873865,
+      "tags": {
+        "club": "sport",
+        "contact:phone": "+262 693 81 29 92;+262 692 867 263",
+        "contact:website": "https://saint-leu-surf-club.assoconnect.com/page/2597056-saint-leu-surf-club",
+        "name": "Saint-Leu Surf Club Elio Canestri",
+        "short_name": "SLSC",
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11982988122,
+      "lat": 43.5962488,
+      "lon": -1.4592893,
+      "tags": {
+        "club": "sport",
+        "name": "Shark Pool",
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12026828243,
+      "lat": 48.2240411,
+      "lon": -4.5258803,
+      "tags": {
+        "addr:city": "Crozo",
+        "name": "K rider club",
+        "payment:cash": "yes",
+        "payment:paylib": "yes",
+        "phone": "+33631055230",
+        "shop": "sports",
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12530052893,
+      "lat": 46.1965101,
+      "lon": -1.4323746,
+      "tags": {
+        "addr:city": "La Couarde-sur-Mer",
+        "addr:housenumber": "2",
+        "addr:postcode": "17670",
+        "addr:street": "Route d'Ars",
+        "club": "sport",
+        "name": "Neway",
+        "opening_hours": "Mo-Su 10:00-19:00",
+        "phone": "+33 5 46 29 89 54",
+        "sport": "surfing",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12696893830,
+      "lat": 43.7893669,
+      "lon": -1.3920552,
+      "tags": {
+        "addr:city": "Vieux Boucau",
+        "addr:housenumber": "7",
+        "addr:postcode": "40480",
+        "addr:street": "Rue du Pignadar",
+        "club": "sport",
+        "name": "Ecole de surf Atlantic Surf Lodge",
+        "operator": "SARL Vague d'or",
+        "ref:FR:CRTA": "ASCAQU040V50K3Y6",
+        "sport": "surfing",
+        "website": "https://atlantic-surflodge.com/fr/bienvenue-chez-atlantic-surf-lodge/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12855068667,
+      "lat": 43.8155045,
+      "lon": -1.4011265,
+      "tags": {
+        "addr:city": "Messanges",
+        "addr:postcode": "40660",
+        "addr:street": "Avenue de l'Océan",
+        "club": "sport",
+        "name": "WAITEUTEU Sauvetage Côtier",
+        "ref:FR:CRTA": "ASCAQU040V50LS7Z",
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12882921537,
+      "lat": 43.6596962,
+      "lon": -1.4422033,
+      "tags": {
+        "addr:city": "Soorts-Hossegor",
+        "addr:housenumber": "68",
+        "addr:postcode": "40150",
+        "addr:street": "Avenue des Abeilles",
+        "club": "sport",
+        "name": "Natural Surf Lodge",
+        "phone": "+33674160228",
+        "ref:FR:CRTA": "ASCAQU040FS00047",
+        "sport": "surfing",
+        "website": "naturalsurflodge.fr"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12909560212,
+      "lat": 43.674332,
+      "lon": -1.3870534,
+      "tags": {
+        "addr:city": "Soorts-Hossegor",
+        "addr:housenumber": "114",
+        "addr:postcode": "40150",
+        "addr:street": "rue des vanniers",
+        "name": "one surfing co",
+        "opening_hours": "Mo-Fr 08:00-17:00",
+        "ref:FR:CRTA": "A0013AQU040V510Y9P",
+        "shop": "sports",
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12946667988,
+      "lat": 43.6371476,
+      "lon": -1.4235618,
+      "tags": {
+        "addr:city": "Capbreton",
+        "addr:housenumber": "46",
+        "addr:postcode": "40130",
+        "addr:street": "Avenue de Verdun",
+        "club": "sport",
+        "name": "Capbreton Surf School",
+        "operator": "Capbreton Surf House",
+        "phone": "+33 6 41 24 14 53",
+        "ref:FR:CRTA": "ASCAQU040V511KSN",
+        "sport": "surfing",
+        "website": "https://www.capbretonsurfhouse.com/capbreton_surf_school/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12956451292,
+      "lat": 43.494888,
+      "lon": -1.5333643,
+      "tags": {
+        "clothes": "sports",
+        "name": "Rainbow Surf Shop",
+        "ref:FR:SIRET": "32665107200059",
+        "shop": "clothes",
+        "sport": "surfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13001148299,
+      "lat": 45.223151,
+      "lon": -1.168618,
+      "tags": {
+        "addr:housenumber": "17",
+        "addr:street": "Avenue Jean Lafitte",
+        "name": "Twins Surf School",
+        "phone": "+33(0)612253951",
+        "sport": "surfing",
+        "website": "https://www.hourtinsurfschool.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13078116642,
+      "lat": 43.0746659,
+      "lon": 5.7979596,
+      "tags": {
+        "club": "sport",
+        "description": "École de stand-up paddle et de surf",
+        "leisure": "sports_centre",
+        "name": "SurfClub",
+        "phone": "+33 7 82 00 35 85",
+        "sport": "surfing",
+        "website": "https://www.sixfours-surfclub.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13119606092,
+      "lat": 46.6073857,
+      "lon": -1.853756,
+      "tags": {
+        "club": "sport",
+        "facebook": "https://fr-fr.facebook.com/people/Breti-Surf-School/100057413982818/",
+        "mobile": "+33 6 18 97 20 37",
+        "name": "Bréti Surfschool",
+        "sport": "surfing",
+        "website": "https://www.breti-surfschool.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13123766229,
+      "lat": 46.6027499,
+      "lon": -1.8498893,
+      "tags": {
+        "club": "sport",
+        "facebook": "https://www.facebook.com/p/Keep-cool-surfing-100047710814796/",
+        "name": "Keep Cool Surfing",
+        "phone": "+33 6 61 47 59 37",
+        "sport": "surfing",
+        "website": "https://www.keepcoolsurfing.com"
+      }
+    }
+    ,{
+      "type": "node",
+      "id": 896353589,
+      "lat": 41.7130418,
+      "lon": 8.815415,
+      "tags": {
+        "leisure": "pitch",
+        "sport": "kitesurfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 946788601,
+      "lat": 43.387239,
+      "lon": 4.8514345,
+      "tags": {
+        "leisure": "sports_centre",
+        "name": "Baie de Carteau",
+        "source": "Bing",
+        "sport": "kitesurfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 946788627,
+      "lat": 43.4215723,
+      "lon": 4.7306028,
+      "tags": {
+        "amenity": "training",
+        "leisure": "sports_centre",
+        "name": "Absolute Kite Boarding",
+        "source": "Bing",
+        "sport": "kitesurfing",
+        "training": "sport"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1128590012,
+      "lat": 44.5327279,
+      "lon": 6.4312004,
+      "tags": {
+        "leisure": "sports_centre",
+        "name": "Spot de Boscodon",
+        "sport": "kitesurfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1203725438,
+      "lat": 44.7546476,
+      "lon": -1.1338093,
+      "tags": {
+        "leisure": "sports_centre",
+        "name": "KiteSurf and WindSurf",
+        "sport": "kitesurfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1722894754,
+      "lat": 42.8411453,
+      "lon": 3.0431148,
+      "tags": {
+        "addr:housenumber": "15",
+        "addr:street": "Zone Artisanale",
+        "amenity": "surf_school",
+        "fixme": "ameliorer placement car pas en permanance sur la plage",
+        "name": "Sky Fly",
+        "phone": "+33 6 75 42 26 91;+33 9 54 48 89 83",
+        "sport": "kitesurfing",
+        "website": "https://www.sky-fly.com/",
+        "wheelchair": "yes",
+        "wheelchair:description": "Label Tourisme & Handicap"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2449181508,
+      "lat": 43.5449867,
+      "lon": 3.9710289,
+      "tags": {
+        "name": "Axel'Air",
+        "shop": "sports",
+        "sport": "kitesurfing",
+        "website": "https://www.axelair.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2470903272,
+      "lat": 43.6574579,
+      "lon": 7.1949749,
+      "tags": {
+        "leisure": "sports_centre",
+        "name": "Spot de Kitesurf de Saint-Laurent Du Var",
+        "sport": "kitesurfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2470907668,
+      "lat": 43.5351792,
+      "lon": 7.038287,
+      "tags": {
+        "leisure": "sports_centre",
+        "name": "Spot de Kitesurf du PalmBeach",
+        "sport": "kitesurfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2470911317,
+      "lat": 43.4119345,
+      "lon": 6.7388512,
+      "tags": {
+        "leisure": "sports_centre",
+        "name": "Spot de Kitesurf de Fréjus",
+        "sport": "kitesurfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2810442601,
+      "lat": 43.5311027,
+      "lon": 3.9385249,
+      "tags": {
+        "name": "Moana Shop",
+        "ref:FR:SIRET": "74981600500013",
+        "shop": "sports",
+        "sport": "kitesurfing",
+        "website": "https://www.moanashop.fr/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2810442602,
+      "lat": 43.5292452,
+      "lon": 3.9244789,
+      "tags": {
+        "name": "Vague et Vent",
+        "shop": "sports",
+        "sport": "kitesurfing",
+        "website": "https://www.moanashop.fr/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2954119219,
+      "lat": 43.505813,
+      "lon": 4.1383153,
+      "tags": {
+        "contact:website": "http://www.club30kite.com/",
+        "leisure": "sports_centre",
+        "name": "Club30kite",
+        "source": "survey2014",
+        "sport": "kitesurfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3713592379,
+      "lat": 5.1785345,
+      "lon": -52.6487756,
+      "tags": {
+        "name": "Kite Spot Kourou",
+        "sport": "kitesurfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4054654772,
+      "lat": 47.9387146,
+      "lon": 7.0258717,
+      "tags": {
+        "description": "Zone de snowkite du Markstein, Plateau du Steinlebach, praticable par vents NE, E, W, NW . Vents dominants NE, SW (perturbé) .",
+        "leisure": "pitch",
+        "name": "Snowkite Markstein",
+        "sport": "kitesurfing",
+        "surface": "ground",
+        "website": "http://lavl.free.fr/site-parapente-vosges/Markstein-Snow-Kite.html"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4054670024,
+      "lat": 47.9278698,
+      "lon": 7.014839,
+      "tags": {
+        "description": "Zone de snowkite du Markstein, Dôme du Treh, praticable par toutes orientations du vent . Vents dominants SW, NE .",
+        "leisure": "pitch",
+        "name": "Snowkite Markstein",
+        "sport": "kitesurfing",
+        "surface": "ground",
+        "website": "http://lavl.free.fr/site-parapente-vosges/Markstein-Snow-Kite.html"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4299104622,
+      "lat": 42.9708981,
+      "lon": 3.018115,
+      "tags": {
+        "name": "Kitesurf Spot La Palme",
+        "sport": "kitesurfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4390731413,
+      "lat": 44.9072404,
+      "lon": 5.6710912,
+      "tags": {
+        "description": "Ecole de kitesurf et hydrofoil",
+        "leisure": "sports_centre",
+        "name": "Freekite",
+        "phone": "+33 6 26 90 28 15",
+        "sport": "kitesurfing",
+        "website": "http://www.freekiteschool.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4390731420,
+      "lat": 44.907276,
+      "lon": 5.6710745,
+      "tags": {
+        "addr:city": "Treffort",
+        "addr:postcode": "38650",
+        "addr:street": "Sous Jullières",
+        "description": "Ecole de kitesurf",
+        "leisure": "sports_centre",
+        "name": "Teknikite",
+        "phone": "+33 6 19 41 28 27",
+        "sport": "kitesurfing",
+        "website": "https://www.teknikite.fr/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5239357494,
+      "lat": -21.3429277,
+      "lon": 55.4659714,
+      "tags": {
+        "name": "Spot de kitesurfing de Saint-Pierre",
+        "sport": "kitesurfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6620491493,
+      "lat": 46.0633603,
+      "lon": -1.0946846,
+      "tags": {
+        "description": "A partir de 19h en été",
+        "sport": "kitesurfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6620579485,
+      "lat": 46.7586468,
+      "lon": -2.0356143,
+      "tags": {
+        "description": "Zone délimitée en été",
+        "sport": "kitesurfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7241219176,
+      "lat": 16.2319965,
+      "lon": -61.3687597,
+      "tags": {
+        "leisure": "swimming_area",
+        "name": "Spot kitesurf Anse du Belley",
+        "sport": "kitesurfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7640628054,
+      "lat": 49.3012043,
+      "lon": -0.0826993,
+      "tags": {
+        "club": "sport",
+        "name": "Houlgate assise Kite",
+        "phone": "+33 6 50 86 25 95",
+        "sport": "kitesurfing",
+        "website": "https://hak.voileslibrespaysdauge.fr/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8431319287,
+      "lat": 43.4014913,
+      "lon": 3.6573764,
+      "tags": {
+        "club": "sport",
+        "name": "Triderland - Kitesurf School & Cruise",
+        "sport": "kitesurfing",
+        "website": "https://www.triderland.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8951413979,
+      "lat": 43.4196441,
+      "lon": 3.6014155,
+      "tags": {
+        "amenity": "surf_school",
+        "club": "sport",
+        "description": "Ecole de kitesurf",
+        "leisure": "sports_centre",
+        "name": "Fildair",
+        "sport": "kitesurfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9883477914,
+      "lat": 46.4349648,
+      "lon": -1.6584458,
+      "tags": {
+        "club": "sport",
+        "name": "Oceanplayers",
+        "sport": "kitesurfing",
+        "website": "https://oceanplayers.fr"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10891826405,
+      "lat": 43.0383229,
+      "lon": 6.1191753,
+      "tags": {
+        "addr:housenumber": "1",
+        "addr:postcode": "83400",
+        "addr:street": "Allée des Genêts",
+        "amenity": "surf_school",
+        "name": "Wing & Kite",
+        "phone": "+337 81 12 35 28",
+        "sport": "kitesurfing",
+        "website": "https://wing-kite.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11119124357,
+      "lat": 47.6955332,
+      "lon": -3.3468678,
+      "tags": {
+        "leisure": "sports_centre",
+        "name": "You-Kite",
+        "sport": "kitesurfing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11945190368,
+      "lat": 43.706995,
+      "lon": -1.4335514,
+      "tags": {
+        "addr:city": "Seignosse",
+        "addr:housenumber": "12",
+        "addr:postcode": "40510",
+        "addr:street": "Avenue de la Grande Plage",
+        "club": "sport",
+        "name": "Sud Landes Kite",
+        "phone": "+33 6 58 01 35 02",
+        "ref:FR:CRTA": "ASCAQU040V5008K7",
+        "sport": "kitesurfing",
+        "website": "https://www.sudlandeskite.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12157549097,
+      "lat": 44.730997,
+      "lon": 3.8285336,
+      "tags": {
+        "description": "Adapté aux vents N, NO",
+        "leisure": "pitch",
+        "name": "Mas d'Armand",
+        "sport": "kitesurfing",
+        "surface": "ground"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12157586112,
+      "lat": 44.7520115,
+      "lon": 3.7865563,
+      "tags": {
+        "description": "Adapté aux vents S, SE . Navigation au vent des bouées jaunes . Réserve de pêche interdite à la navigation .",
+        "leisure": "pitch",
+        "name": "La Presqu'île",
+        "sport": "kitesurfing",
+        "surface": "ground"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13123697769,
+      "lat": 46.607459,
+      "lon": -1.8534727,
+      "tags": {
+        "club": "sport",
+        "email": "Kiteclubbretignollais@gmail.com",
+        "facebook": "https://www.facebook.com/kiteclubbretignollais85/",
+        "instagram": "https://www.instagram.com/Kiteclubbretignollais/",
+        "name": "Kite Club Btétignollais",
+        "sport": "kitesurfing"
+      }
+    }
+  ]
+}

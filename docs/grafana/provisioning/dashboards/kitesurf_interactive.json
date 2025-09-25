@@ -1,0 +1,456 @@
+{
+  "id": null,
+  "title": "Kitesurf Spots - Interactive Selection",
+  "tags": ["kitesurf", "interactive", "weather"],
+  "timezone": "browser",
+  "refresh": "${refresh_interval}",
+  "panels": [
+    {
+      "id": 1,
+      "title": "🏄‍♂️ Spots Kitesurf Français",
+      "type": "table",
+      "gridPos": {
+        "h": 10,
+        "w": 24,
+        "x": 0,
+        "y": 0
+      },
+      "targets": [
+        {
+          "datasource": {
+            "type": "marcusolsson-json-datasource",
+            "uid": "BackendAPI"
+          },
+          "queryType": "json",
+          "url": "/spots",
+          "jsonPath": "$.spots[*]",
+          "refId": "A"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "custom": {
+            "displayMode": "table",
+            "filterable": true,
+            "sortable": true
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "name"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 250
+              },
+              {
+                "id": "custom.cellOptions",
+                "value": {
+                  "type": "color-background"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "id"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 100
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "latitude"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 100
+              },
+              {
+                "id": "unit",
+                "value": "short"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "longitude"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 100
+              },
+              {
+                "id": "unit",
+                "value": "short"
+              }
+            ]
+          }
+        ]
+      },
+      "options": {
+        "showHeader": true,
+        "sortBy": [
+          {
+            "desc": false,
+            "displayName": "name"
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "title": "🌤️ Météo en Temps Réel",
+      "type": "text",
+      "gridPos": {
+        "h": 6,
+        "w": 12,
+        "x": 0,
+        "y": 10
+      },
+      "options": {
+        "content": "<div style='text-align: center; padding: 20px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 15px; color: white; box-shadow: 0 4px 15px rgba(0,0,0,0.2);'><h3>🌤️ Météo en Temps Réel</h3><div id='weather-info' style='margin-top: 15px; padding: 15px; background: rgba(255,255,255,0.1); border-radius: 10px;'><p><strong>Spot sélectionné:</strong> <span id='selected-spot-name'>Aucun</span></p><p><strong>Dernière mise à jour:</strong> <span id='last-update'>-</span></p></div><div style='margin-top: 15px;'><button onclick='refreshWeather()' style='background: #4CAF50; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; margin: 5px;'>🔄 Actualiser</button><button onclick='selectRandomSpot()' style='background: #2196F3; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; margin: 5px;'>🎲 Spot Aléatoire</button></div></div><script>let selectedSpotId = '${spot_id}'; function refreshWeather() { fetchWeatherData(selectedSpotId); } function selectRandomSpot() { const spots = [670699720, 913120839, 123456789]; selectedSpotId = spots[Math.floor(Math.random() * spots.length)]; fetchWeatherData(selectedSpotId); } function fetchWeatherData(spotId) { fetch(`/weather/${spotId}`).then(response => response.json()).then(data => { if (data.status === 'ok') { document.getElementById('selected-spot-name').textContent = data.data.spot.name; document.getElementById('last-update').textContent = new Date().toLocaleTimeString(); updateWeatherPanels(data.data); } }); } function updateWeatherPanels(weatherData) { console.log('Weather data updated:', weatherData); } setInterval(refreshWeather, 30000); refreshWeather();</script>",
+        "mode": "html"
+      }
+    },
+    {
+      "id": 3,
+      "title": "🌡️ Température",
+      "type": "stat",
+      "gridPos": {
+        "h": 3,
+        "w": 6,
+        "x": 12,
+        "y": 10
+      },
+      "targets": [
+        {
+          "datasource": {
+            "type": "marcusolsson-json-datasource",
+            "uid": "BackendAPI"
+          },
+          "queryType": "json",
+          "url": "/weather/${spot_id}",
+          "jsonPath": "$.data.weather.temperature",
+          "refId": "A"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "celsius",
+          "color": {
+            "mode": "thresholds"
+          },
+          "thresholds": {
+            "steps": [
+              {
+                "color": "blue",
+                "value": null
+              },
+              {
+                "color": "green",
+                "value": 18
+              },
+              {
+                "color": "yellow",
+                "value": 25
+              },
+              {
+                "color": "red",
+                "value": 30
+              }
+            ]
+          }
+        }
+      },
+      "options": {
+        "colorMode": "value",
+        "graphMode": "area",
+        "justifyMode": "center"
+      }
+    },
+    {
+      "id": 4,
+      "title": "💨 Vent",
+      "type": "stat",
+      "gridPos": {
+        "h": 3,
+        "w": 6,
+        "x": 18,
+        "y": 10
+      },
+      "targets": [
+        {
+          "datasource": {
+            "type": "marcusolsson-json-datasource",
+            "uid": "BackendAPI"
+          },
+          "queryType": "json",
+          "url": "/weather/${spot_id}",
+          "jsonPath": "$.data.weather.wind_speed",
+          "refId": "A"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "km/h",
+          "color": {
+            "mode": "thresholds"
+          },
+          "thresholds": {
+            "steps": [
+              {
+                "color": "red",
+                "value": null
+              },
+              {
+                "color": "yellow",
+                "value": 15
+              },
+              {
+                "color": "green",
+                "value": 25
+              },
+              {
+                "color": "blue",
+                "value": 35
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": 5,
+      "title": "💧 Humidité",
+      "type": "gauge",
+      "gridPos": {
+        "h": 3,
+        "w": 6,
+        "x": 12,
+        "y": 13
+      },
+      "targets": [
+        {
+          "datasource": {
+            "type": "marcusolsson-json-datasource",
+            "uid": "BackendAPI"
+          },
+          "queryType": "json",
+          "url": "/weather/${spot_id}",
+          "jsonPath": "$.data.weather.humidity",
+          "refId": "A"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "percent",
+          "min": 0,
+          "max": 100,
+          "color": {
+            "mode": "thresholds"
+          },
+          "thresholds": {
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "yellow",
+                "value": 60
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": 6,
+      "title": "🏄‍♂️ Rating Kitesurf",
+      "type": "stat",
+      "gridPos": {
+        "h": 3,
+        "w": 6,
+        "x": 18,
+        "y": 13
+      },
+      "targets": [
+        {
+          "datasource": {
+            "type": "marcusolsson-json-datasource",
+            "uid": "BackendAPI"
+          },
+          "queryType": "json",
+          "url": "/weather/${spot_id}",
+          "jsonPath": "$.data.weather.kitesurf_rating",
+          "refId": "A"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "thresholds": {
+            "steps": [
+              {
+                "color": "red",
+                "value": null
+              },
+              {
+                "color": "yellow",
+                "value": 1
+              },
+              {
+                "color": "green",
+                "value": 2
+              }
+            ]
+          },
+          "mappings": [
+            {
+              "options": {
+                "excellent": {
+                  "color": "green",
+                  "text": "🌟 Excellent"
+                },
+                "good": {
+                  "color": "yellow",
+                  "text": "👍 Good"
+                },
+                "fair": {
+                  "color": "orange",
+                  "text": "👌 Fair"
+                }
+              },
+              "type": "value"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "templating": {
+    "list": [
+      {
+        "name": "spot_id",
+        "type": "textbox",
+        "label": "Spot ID",
+        "query": "670699720",
+        "current": {
+          "selected": false,
+          "text": "670699720",
+          "value": "670699720"
+        },
+        "options": [
+          {
+            "selected": true,
+            "text": "670699720",
+            "value": "670699720"
+          }
+        ]
+      },
+      {
+        "name": "refresh_interval",
+        "type": "interval",
+        "label": "Refresh Interval",
+        "query": "5s,10s,30s,1m,5m,15m,30m,1h,2h,1d",
+        "current": {
+          "selected": false,
+          "text": "5s",
+          "value": "5s"
+        },
+        "options": [
+          {
+            "selected": true,
+            "text": "5s",
+            "value": "5s"
+          },
+          {
+            "selected": false,
+            "text": "10s",
+            "value": "10s"
+          },
+          {
+            "selected": false,
+            "text": "30s",
+            "value": "30s"
+          },
+          {
+            "selected": false,
+            "text": "1m",
+            "value": "1m"
+          }
+        ]
+      }
+    ]
+  },
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": {
+          "type": "grafana",
+          "uid": "-- Grafana --"
+        },
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "type": "dashboard"
+      },
+      {
+        "datasource": {
+          "type": "marcusolsson-json-datasource",
+          "uid": "BackendAPI"
+        },
+        "enable": true,
+        "hide": false,
+        "iconColor": "rgba(255, 99, 132, 1)",
+        "name": "Spot Weather Updates",
+        "type": "dashboard",
+        "target": {
+          "queryType": "json",
+          "url": "/weather/${spot_id}",
+          "jsonPath": "$.data.timestamp"
+        }
+      },
+      {
+        "datasource": {
+          "type": "marcusolsson-json-datasource",
+          "uid": "BackendAPI"
+        },
+        "enable": true,
+        "hide": false,
+        "iconColor": "rgba(54, 162, 235, 1)",
+        "name": "Spot Selection Events",
+        "type": "dashboard",
+        "target": {
+          "queryType": "json",
+          "url": "/spots",
+          "jsonPath": "$.spots[?(@.id == ${spot_id})].name"
+        }
+      }
+    ]
+  },
+  "schemaVersion": 30,
+  "version": 1,
+  "links": []
+}

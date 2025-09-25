@@ -1,0 +1,64 @@
+{
+  "id": null,
+  "title": "Weather Pipeline Real Time",
+  "tags": ["weather", "realtime"],
+  "timezone": "browser",
+  "panels": [
+    {
+      "id": 1,
+      "title": "Pipeline Controls",
+      "type": "text",
+      "gridPos": {
+        "h": 4,
+        "w": 24,
+        "x": 0,
+        "y": 0
+      },
+      "options": {
+        "content": "<div style='text-align: center; padding: 20px; background: #1e3c72; border-radius: 10px; color: white;'><h2>Weather Pipeline - Real Time Controls</h2><div style='display: flex; justify-content: space-around; margin-top: 15px;'><button onclick='alert(\"Pipeline started!\")' style='background: #4CAF50; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;'>Start</button><button onclick='alert(\"Pipeline stopped!\")' style='background: #f44336; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;'>Stop</button><button onclick='window.location.reload()' style='background: #2196F3; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;'>Refresh</button></div></div>",
+        "mode": "html"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "custom": {
+            "align": "center"
+          }
+        }
+      }
+    },
+    {
+      "id": 2,
+      "title": "Service Status",
+      "type": "stat",
+      "gridPos": {
+        "h": 4,
+        "w": 12,
+        "x": 0,
+        "y": 4
+      },
+      "targets": [
+        {
+          "expr": "up{job=\"kafka\"}",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Real Time Metrics",
+      "type": "stat",
+      "gridPos": {
+        "h": 4,
+        "w": 12,
+        "x": 12,
+        "y": 4
+      },
+      "targets": [
+        {
+          "expr": "up{job=\"analytics-api\"}",
+          "refId": "A"
+        }
+      ]
+    }
+  ]
+}

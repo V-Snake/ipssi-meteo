@@ -305,9 +305,9 @@ if __name__ == "__main__":
             else:
                 print("⚠️  No weather data received, skipping this cycle")
             
-            # Attendre 60 secondes avant la prochaine requête
-            print("⏳ Waiting 60 seconds before next update...")
-            time.sleep(60)
+            # Attendre 120 secondes avant la prochaine requête (pour éviter la limite API)
+            print("⏳ Waiting 120 seconds before next update...")
+            time.sleep(120)
             
         except KeyboardInterrupt:
             print("\n🛑 Producer stopped by user")

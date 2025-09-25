@@ -1,0 +1,361 @@
+{
+  "id": null,
+  "title": "Kitesurf Spots - Simple Test",
+  "tags": ["kitesurf", "test"],
+  "timezone": "browser",
+  "refresh": "5s",
+  "panels": [
+    {
+      "id": 1,
+      "title": "Test API Backend",
+      "type": "text",
+      "gridPos": {
+        "h": 4,
+        "w": 24,
+        "x": 0,
+        "y": 0
+      },
+      "options": {
+        "content": "<div style='text-align: center; padding: 20px; background: #1e3c72; border-radius: 10px; color: white;'><h3>🏄‍♂️ Test API Backend</h3><p>Vérification de la connexion à l'API backend</p></div>",
+        "mode": "html"
+      }
+    },
+    {
+      "id": 2,
+      "title": "Liste des Spots",
+      "type": "table",
+      "gridPos": {
+        "h": 8,
+        "w": 24,
+        "x": 0,
+        "y": 4
+      },
+      "targets": [
+        {
+          "datasource": {
+            "type": "marcusolsson-json-datasource",
+            "uid": "BackendAPI"
+          },
+          "queryType": "json",
+          "url": "/spots",
+          "jsonPath": "$.spots[*]",
+          "refId": "A"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "custom": {
+            "displayMode": "table"
+          }
+        }
+      }
+    },
+    {
+      "id": 3,
+      "title": "Météo Spot Test",
+      "type": "table",
+      "gridPos": {
+        "h": 8,
+        "w": 24,
+        "x": 0,
+        "y": 12
+      },
+      "targets": [
+        {
+          "datasource": {
+            "type": "marcusolsson-json-datasource",
+            "uid": "BackendAPI"
+          },
+          "queryType": "json",
+          "url": "/weather/670699720",
+          "jsonPath": "$.data",
+          "refId": "A"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "custom": {
+            "displayMode": "table"
+          }
+        }
+      }
+    }
+  ],
+  "templating": {
+    "list": []
+  },
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": {
+          "type": "grafana",
+          "uid": "-- Grafana --"
+        },
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 0,
+  "id": 9,
+  "links": [],
+  "panels": [
+    {
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 24,
+        "x": 0,
+        "y": 0
+      },
+      "id": 1,
+      "options": {
+        "code": {
+          "language": "plaintext",
+          "showLineNumbers": false,
+          "showMiniMap": false
+        },
+        "content": "<div style='text-align: center; padding: 20px; background: #1e3c72; border-radius: 10px; color: white;'><h3>🏄‍♂️ Test API Backend</h3><p>Vérification de la connexion à l'API backend</p></div>",
+        "mode": "html"
+      },
+      "pluginVersion": "12.2.0",
+      "title": "Test API Backend",
+      "type": "text"
+    },
+    {
+      "datasource": {
+        "type": "marcusolsson-json-datasource",
+        "uid": "BackendAPI"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "custom": {
+            "align": "auto",
+            "cellOptions": {
+              "type": "table"
+            },
+            "footer": {
+              "reducers": []
+            },
+            "inspect": false
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 24,
+        "x": 0,
+        "y": 4
+      },
+      "id": 2,
+      "options": {
+        "cellHeight": "sm",
+        "showHeader": true
+      },
+      "pluginVersion": "12.2.0",
+      "targets": [
+        {
+          "cacheDurationSeconds": 300,
+          "datasource": {
+            "type": "marcusolsson-json-datasource",
+            "uid": "BackendAPI"
+          },
+          "fields": [
+            {
+              "jsonPath": "$.spots[*].name"
+            },
+            {
+              "jsonPath": "$.spots[*].latitude",
+              "language": "jsonpath",
+              "name": ""
+            },
+            {
+              "jsonPath": "$.spots[*].longitude",
+              "language": "jsonpath",
+              "name": ""
+            },
+            {
+              "jsonPath": "$.spots[*].country",
+              "language": "jsonpath",
+              "name": ""
+            },
+            {
+              "jsonPath": "$.spots[*].tags.sport",
+              "language": "jsonpath",
+              "name": ""
+            }
+          ],
+          "jsonPath": "$.spots[*]",
+          "method": "GET",
+          "queryParams": "",
+          "queryType": "json",
+          "refId": "A",
+          "url": "/spots",
+          "urlPath": "/spots"
+        }
+      ],
+      "title": "Liste des Spots",
+      "type": "table"
+    },
+    {
+      "datasource": {
+        "type": "marcusolsson-json-datasource",
+        "uid": "BackendAPI"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "custom": {
+            "align": "auto",
+            "cellOptions": {
+              "type": "table"
+            },
+            "footer": {
+              "reducers": []
+            },
+            "inspect": false
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 24,
+        "x": 0,
+        "y": 12
+      },
+      "id": 3,
+      "options": {
+        "cellHeight": "sm",
+        "frameIndex": 1,
+        "showHeader": true
+      },
+      "pluginVersion": "12.2.0",
+      "targets": [
+        {
+          "cacheDurationSeconds": 300,
+          "datasource": {
+            "type": "marcusolsson-json-datasource",
+            "uid": "BackendAPI"
+          },
+          "fields": [
+            {
+              "jsonPath": "$.data.spot.id",
+              "language": "jsonpath",
+              "name": ""
+            },
+            {
+              "jsonPath": "$.data.spot.name",
+              "language": "jsonpath",
+              "name": ""
+            }
+          ],
+          "jsonPath": "$.data",
+          "method": "GET",
+          "queryParams": "",
+          "queryType": "json",
+          "refId": "Spot",
+          "url": "/weather/670699720",
+          "urlPath": "/weather/670699720"
+        },
+        {
+          "cacheDurationSeconds": 300,
+          "datasource": {
+            "type": "marcusolsson-json-datasource",
+            "uid": "BackendAPI"
+          },
+          "fields": [
+            {
+              "jsonPath": "$.data.weather.temperature",
+              "language": "jsonpath",
+              "name": "temperature"
+            },
+            {
+              "jsonPath": "$.data.weather.humidity",
+              "language": "jsonpath",
+              "name": "humidity"
+            },
+            {
+              "jsonPath": "$.data.weather.wind_speed",
+              "language": "jsonpath",
+              "name": "speed",
+              "type": "number"
+            },
+            {
+              "jsonPath": "$.data.weather.condition",
+              "language": "jsonpath",
+              "name": "condition"
+            },
+            {
+              "jsonPath": "$.data.weather.wind_speed",
+              "language": "jsonpath",
+              "name": "wind_speed"
+            },
+            {
+              "jsonPath": "$.data.weather.wind_direction",
+              "language": "jsonpath",
+              "name": "wind direction"
+            },
+            {
+              "jsonPath": "$.data.weather.kitesurf_rating",
+              "language": "jsonpath",
+              "name": "surfing rating"
+            }
+          ],
+          "hide": false,
+          "jsonPath": "$.data",
+          "method": "GET",
+          "queryParams": "",
+          "queryType": "json",
+          "refId": "Details",
+          "url": "/weather/670699720",
+          "urlPath": "/weather/670699720"
+        }
+      ],
+      "title": "Météo Spot Test",
+      "type": "table"
+    }
+  ],
+  "preload": false,
+  "timepicker": {},
+  "version": 1
+}
+
+ 

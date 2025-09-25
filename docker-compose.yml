@@ -92,44 +92,89 @@ services:
   #     kafka:
   #       condition: service_healthy
 
-  # data-producer-london:
-  #   build:
-  #     context: ./kafka-producer
-  #     dockerfile: Dockerfile.v2
-  #   environment:
-  #     CITY: London
-  #     COUNTRY: United Kingdom
-  #     KAFKA_BROKER: kafka:9092
-  #     TOPIC: weather_stream
-  #   depends_on:
-  #     kafka:
-  #       condition: service_healthy
+  data-producer-london:
+    build:
+      context: ./kafka-producer
+      dockerfile: Dockerfile.v2
+    environment:
+      CITY: London
+      COUNTRY: United Kingdom
+      KAFKA_BROKER: kafka:9092
+      TOPIC: weather_stream
+    command: ["python", "simulated_producer.py"]
+    depends_on:
+      kafka:
+        condition: service_healthy
   
-  # data-producer-paris:
-  #   build:
-  #     context: ./kafka-producer
-  #     dockerfile: Dockerfile.v2
-  #   environment:
-  #     CITY: Paris
-  #     COUNTRY: France
-  #     KAFKA_BROKER: kafka:9092
-  #     TOPIC: weather_stream
-  #   depends_on:
-  #     kafka:
-  #       condition: service_healthy
+  data-producer-paris:
+    build:
+      context: ./kafka-producer
+      dockerfile: Dockerfile.v2
+    environment:
+      CITY: Paris
+      COUNTRY: France
+      KAFKA_BROKER: kafka:9092
+      TOPIC: weather_stream
+    command: ["python", "simulated_producer.py"]
+    depends_on:
+      kafka:
+        condition: service_healthy
   
-  # data-producer-new-york:
-  #   build:
-  #     context: ./kafka-producer
-  #     dockerfile: Dockerfile.v2
-  #   environment:
-  #     CITY: New York
-  #     COUNTRY: United States
-  #     KAFKA_BROKER: kafka:9092
-  #     TOPIC: weather_stream
-  #   depends_on:
-  #     kafka:
-  #       condition: service_healthy
+  data-producer-new-york:
+    build:
+      context: ./kafka-producer
+      dockerfile: Dockerfile.v2
+    environment:
+      CITY: New York
+      COUNTRY: United States
+      KAFKA_BROKER: kafka:9092
+      TOPIC: weather_stream
+    command: ["python", "simulated_producer.py"]
+    depends_on:
+      kafka:
+        condition: service_healthy
+
+  places-generator:
+    build:
+      context: ./kafka-producer
+      dockerfile: Dockerfile.v2
+    environment:
+      KAFKA_BROKER: kafka:9092
+      PLACES_TOPIC: place
+    command: ["python", "places_generator.py"]
+    depends_on:
+      kafka:
+        condition: service_healthy
+
+  coordinates-weather-producer:
+    build:
+      context: ./kafka-producer
+      dockerfile: Dockerfile.v2
+    environment:
+      KAFKA_BROKER: kafka:9092
+      PLACES_TOPIC: place
+      WEATHER_TOPIC: weather_stream
+    command: ["python", "coordinates_weather_producer.py"]
+    depends_on:
+      kafka:
+        condition: service_healthy
+      places-generator:
+        condition: service_started
+
+  backend-api:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    environment:
+      KAFKA_BOOTSTRAP_SERVERS: kafka:9092
+      WEATHER_API_KEY: changeme
+    ports:
+      - "8001:8000"
+    depends_on:
+      kafka:
+        condition: service_healthy
+
+# Producteur kitesurf supprimé - on utilise directement l'API backend
 
   data-consumer:
     build:
@@ -181,19 +226,19 @@ services:
 
 
 
-  # spark-hdfs-writer:
-  #   build: ./spark-hdfs-writer
-  #   environment:
-  #     KAFKA_BOOTSTRAP: kafka:9092
-  #     SOURCE_TOPIC: weather_stream
-  #     HDFS_NAMENODE: hdfs://namenode:9000
-  #     HDFS_PATH: /weather-data
-  #     CHECKPOINT_DIR: /tmp/checkpoints/hdfs_writer
-  #   depends_on:
-  #     kafka:
-  #       condition: service_healthy
-  #     namenode:
-  #       condition: service_started
+  spark-hdfs-writer:
+    build: ./spark-hdfs-writer
+    environment:
+      KAFKA_BOOTSTRAP: kafka:9092
+      SOURCE_TOPIC: weather_stream
+      HDFS_NAMENODE: hdfs://namenode:9000
+      HDFS_PATH: /weather-data
+      CHECKPOINT_DIR: /tmp/checkpoints/hdfs_writer
+    depends_on:
+      kafka:
+        condition: service_healthy
+      namenode:
+        condition: service_started
 
   # alerts-consumer:
   #   build: ./kafka-consumer
@@ -210,17 +255,17 @@ services:
   #     namenode:
   #       condition: service_started
 
-  # analytics-api:
-  #   build: ./analytics-api
-  #   environment:
-  #     WEBHDFS_BASE: http://namenode:9870/webhdfs/v1
-  #     WEATHER_DATA_PATH: /weather-data
-  #     ALERTS_PATH: /hdfs-data
-  #   ports:
-  #     - "8000:8000"
-  #   depends_on:
-  #     namenode:
-  #       condition: service_started
+  analytics-api:
+    build: ./analytics-api
+    environment:
+      WEBHDFS_BASE: http://namenode:9870/webhdfs/v1
+      WEATHER_DATA_PATH: /weather-data
+      ALERTS_PATH: /hdfs-data
+    ports:
+      - "8000:8000"
+    depends_on:
+      namenode:
+        condition: service_started
 
   postgres:
     image: postgres:13
