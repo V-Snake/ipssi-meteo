@@ -28,6 +28,9 @@ for i in range(10):
 if producer is None:
     raise Exception("Impossible de connecter à Kafka après plusieurs tentatives.")
 
+if producer is None:
+    raise Exception("Impossible de se connecter à Kafka après plusieurs tentatives.")
+
 
 @app.get("/weather")
 def get_weather(lat: float, lon: float):
@@ -38,3 +41,20 @@ def get_weather(lat: float, lon: float):
     producer.flush()
     print("Message publié dans Kafka :", data)  
     return {"status": "ok", "data": data}
+
+#Envoi des spots de kitesurf → topic "kitesurf-data"
+@app.get("/send-kitesurf")
+def send_kitesurf_data():
+    try:
+        with open("surfspots.json", "r", encoding="utf-8") as f:
+            data = json.load(f)
+    except Exception as e:
+        return {"status": "error", "message": str(e)}
+
+    elements = data.get("elements", [])
+    for spot in elements:
+        producer.send("kitesurf-data", spot)
+    producer.flush()
+
+    print(f"{len(elements)} spots envoyés dans Kafka (topic kitesurf-data)")
+    return {"status": "ok", "count": len(elements)}
